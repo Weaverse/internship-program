@@ -12,18 +12,26 @@
 
 ## Table of Contents
 
-- [Program Overview](#program-overview)
-- [About Weaverse](#about-weaverse)
-- [Technology Stack](#technology-stack)
-- [Pre-Program Requirements](#pre-program-requirements)
-- [Week 1-2: JavaScript Fundamentals](#week-1-2-javascript-fundamentals)
-- [Week 3-4: CSS & Modern Styling](#week-3-4-css--modern-styling)
-- [Week 5-6: TypeScript & Build Tools](#week-5-6-typescript--build-tools)
-- [Week 7-8: Node.js & Backend Development](#week-7-8-nodejs--backend-development)
-- [Week 9-10: React Fundamentals](#week-9-10-react-fundamentals)
-- [Week 11-12: Advanced Topics & Security](#week-11-12-advanced-topics--security)
-- [Week 13-14: Shopify Development](#week-13-14-shopify-development)
-- [Week 15-16: Weaverse Integration & Final Project](#week-15-16-weaverse-integration--final-project)
+- [Weaverse Developer Internship Program](#weaverse-developer-internship-program)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Structure](#structure)
+    - [Learning Outcomes](#learning-outcomes)
+  - [Technology Stack](#technology-stack)
+    - [Core Technologies](#core-technologies)
+  - [Pre-Program Requirements](#pre-program-requirements)
+    - [English for Developers (Self-Study, Recommended)](#english-for-developers-self-study-recommended)
+    - [Orientation \& Setup](#orientation--setup)
+  - [Week 1-2: JavaScript Fundamentals](#week-1-2-javascript-fundamentals)
+  - [Week 3-4: CSS \& Modern Styling](#week-3-4-css--modern-styling)
+  - [Week 5-6: TypeScript \& Build Tools](#week-5-6-typescript--build-tools)
+  - [Week 7-8: Node.js \& Backend Development](#week-7-8-nodejs--backend-development)
+  - [Week 9-10: React Fundamentals](#week-9-10-react-fundamentals)
+  - [Week 11-12: Advanced Topics \& Security](#week-11-12-advanced-topics--security)
+  - [Week 13-14: Shopify Development](#week-13-14-shopify-development)
+  - [Week 15-16: Weaverse Integration \& Final Project](#week-15-16-weaverse-integration--final-project)
+  - [Graduation](#graduation)
+    - [Next Steps](#next-steps)
 
 ---
 
@@ -102,9 +110,10 @@ git config --global user.email "your.email@example.com"
 
 ## Week 1-2: JavaScript Fundamentals
 
-| **Learning Topics** | • Core JavaScript<br>• ES6+ features<br>• Functional programming<br>• Asynchronous JavaScript<br>• Problem-solving |
-|---|---|
-| **Objectives** | Complete 45 Exercism exercises, Master array methods and promises, Build a functional CLI task manager |
+| | |
+|:---|:---|
+| Learning Topics | • Core JavaScript<br>• ES6+ features<br>• Functional programming<br>• Asynchronous JavaScript<br>• Problem-solving |
+| Objectives      | • Complete 45 Exercism exercises<br>• Master array methods and promises<br>• Build a functional CLI task manager |
 
 **JavaScript Basics**
 
@@ -157,9 +166,10 @@ Build a Task Manager CLI:
 
 ## Week 3-4: CSS & Modern Styling
 
-| **Learning Topics** | • Flexbox<br>• CSS Grid<br>• Responsive design<br>• TailwindCSS<br>• Modern styling patterns |
-|---|---|
-| **Objectives** | Complete Flexbox Froggy and Grid Garden, Build responsive FreshCart template clone with TailwindCSS only |
+| | |
+|:---|:---|
+| Learning Topics | • Flexbox<br>• CSS Grid<br>• Responsive design<br>• TailwindCSS<br>• Modern styling patterns             |
+| Objectives      | • Complete Flexbox Froggy and Grid Garden<br>• Build responsive FreshCart template clone with TailwindCSS only |
 
 **CSS Fundamentals**
 
@@ -221,9 +231,10 @@ Complete FreshCart Clone:
 
 ## Week 5-6: TypeScript & Build Tools
 
-| **Learning Topics** | • TypeScript fundamentals<br>• Type safety<br>• Vite build system<br>• Modern project structure |
-|---|---|
-| **Objectives** | Master TypeScript syntax and advanced patterns, Build BudgetY app with Vite + TypeScript + TailwindCSS |
+| | |
+|:---|:---|
+| Learning Topics | • TypeScript fundamentals<br>• Type safety<br>• Vite build system<br>• Modern project structure        |
+| Objectives      | • Master TypeScript syntax and advanced patterns<br>• Build BudgetY app with Vite + TypeScript + TailwindCSS |
 
 **TypeScript**
 
@@ -283,9 +294,10 @@ Complete BudgetY App:
 
 ## Week 7-8: Node.js & Backend Development
 
-| **Learning Topics** | • Node.js ecosystem<br>• Express.js<br>• REST APIs<br>• Database design<br>• Prisma ORM |
-|---|---|
-| **Objectives** | Build complete Blog API with authentication, CRUD operations, and database relationships |
+| | |
+|:---|:---|
+| Learning Topics | • Node.js ecosystem<br>• Express.js<br>• REST APIs<br>• Database design<br>• Prisma ORM  |
+| Objectives      | • Build complete Blog API with authentication<br>• Implement CRUD operations<br>• Create database relationships |
 
 **Week 7: Node.js & Express**
 
@@ -393,9 +405,10 @@ model Comment {
 
 ## Week 9-10: React Fundamentals
 
-| **Learning Topics** | • React components<br>• Hooks<br>• State management<br>• TypeScript integration<br>• Frontend development |
-|---|---|
-| **Objectives** | Master React fundamentals, Build complete Blog frontend with TypeScript, Connect to backend API |
+| | |
+|:---|:---|
+| Learning Topics | • React components<br>• Hooks<br>• State management<br>• TypeScript integration<br>• Frontend development |
+| Objectives      | • Master React fundamentals<br>• Build complete Blog frontend with TypeScript<br>• Connect to backend API |
 
 **Week 9: React Basics**
 
@@ -450,9 +463,10 @@ Complete Blog Platform:
 
 ## Week 11-12: Advanced Topics & Security
 
-| **Learning Topics** | • Schema validation<br>• Authentication<br>• Security<br>• React Router<br>• AI integration |
-|---|---|
-| **Objectives** | Implement secure authentication system, Add input validation with Zod, Build AI-powered blog features |
+| | |
+|:---|:---|
+| Learning Topics | • Schema validation<br>• Authentication<br>• Security<br>• React Router<br>• AI integration           |
+| Objectives      | • Implement secure authentication system<br>• Add input validation with Zod<br>• Build AI-powered blog features |
 
 **Week 11: Validation & Security**
 
@@ -513,9 +527,10 @@ Secure Blog Platform:
 
 ## Week 13-14: Shopify Development
 
-| **Learning Topics** | • Shopify ecosystem<br>• Partner account<br>• Admin APIs<br>• Hydrogen framework<br>• Headless commerce |
-|---|---|
-| **Objectives** | Set up Shopify development environment, Build custom Hydrogen storefront with cart functionality |
+| | |
+|:---|:---|
+| Learning Topics | • Shopify ecosystem<br>• Partner account<br>• Admin APIs<br>• Hydrogen framework<br>• Headless commerce |
+| Objectives      | • Set up Shopify development environment<br>• Build custom Hydrogen storefront<br>• Implement cart functionality |
 
 **Week 13: Shopify Basics**
 
@@ -571,9 +586,10 @@ Shopify Storefront:
 
 ## Week 15-16: Weaverse Integration & Final Project
 
-| **Learning Topics** | • Weaverse SDK<br>• Visual components<br>• Component schemas<br>• Final project integration |
-|---|---|
-| **Objectives** | Master Weaverse platform, Create custom visual components, Build complete e-commerce capstone project |
+| | |
+|:---|:---|
+| Learning Topics | • Weaverse SDK<br>• Visual components<br>• Component schemas<br>• Final project integration           |
+| Objectives      | • Master Weaverse platform<br>• Create custom visual components<br>• Build complete e-commerce capstone project |
 
 **Week 15: Weaverse Development**
 
