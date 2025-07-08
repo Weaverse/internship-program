@@ -114,21 +114,21 @@ git config --global user.email "your.email@example.com"
 
 ---
 
-## Week 1-2: JavaScript
+## Week 1-2: JavaScript & TypeScript
 
-|                 |                                                                                                        |
-| :-------------- | :----------------------------------------------------------------------------------------------------- |
-| Learning Topics | Core JavaScript, ES6+ features, Functional programming, Asynchronous JavaScript, Problem-solving       |
-| Objectives      | Complete 45 Exercism exercises, Master array methods and promises, Build a functional CLI task manager |
+|                 |                                                                                                              |
+| :-------------- | :----------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Core JavaScript, ES6+ features, Functional programming, TypeScript fundamentals, Type-safe development       |
+| Objectives      | Complete 30 JS exercises, Master TypeScript basics, Build a type-safe CLI task manager with full TypeScript |
 
 **Beginner JavaScript (Skip if already familiar)**
 1. Complete [JavaScript Beginner Tutorial](https://www.w3schools.com/js/default.asp)
 
-**Core JavaScript**
+**Core JavaScript (Days 1-3)**
 1. Register an account on [Exercism](https://exercism.org/tracks/javascript)
-2. Complete the following exercises by difficulty:
-   - **20 Easy exercises** - Start with basics and build confidence
-   - **20 Medium exercises** - Apply concepts in more complex scenarios
+2. Complete the following exercises:
+   - **15 Easy exercises** - Start with basics and build confidence
+   - **10 Medium exercises** - Apply concepts in more complex scenarios
    - **5 Hard exercises** - Challenge yourself with advanced problems
 3. Focus on understanding:
    - Variables and data types
@@ -137,31 +137,73 @@ git config --global user.email "your.email@example.com"
    - Control flow and loops
    - String manipulation
 
-**Functional Programming**
+**Functional Programming (Days 4-5)**
 1. Start [LearnRx Interactive Tutorial](https://reactivex.io/learnrx/)
 2. Complete exercises 1-20 (Arrays and Functions)
 3. Focus on:
    - Array methods (map, filter, reduce)
    - Function composition
    - Immutability concepts
+   - Promises and Async/Await
 
-**Asynchronous JavaScript**
-- Complete LearnRx exercises 21-42
-- Complete remaining Exercism "Easy" exercises
-- Topics covered:
-  - Promises
-  - Async/Await
-  - Event handling
+**TypeScript Fundamentals (Days 6-10)**
+1. Read [TypeScript Handbook - The Basics](https://www.typescriptlang.org/docs/handbook/2/basics.html)
+2. Set up TypeScript environment:
+   ```bash
+   npm install -g typescript ts-node @types/node
+   tsc --init
+   ```
+3. Learn essential TypeScript concepts:
+   - Type annotations and inference
+   - Interfaces and type aliases
+   - Function types and generics basics
+   - Union and intersection types
+   - Enums and literal types
+   - Type guards and narrowing
+
+4. Practice with TypeScript exercises:
+   ```typescript
+   // Example: Type-safe task interface
+   interface Task {
+     id: string;
+     title: string;
+     completed: boolean;
+     createdAt: Date;
+     priority: 'low' | 'medium' | 'high';
+   }
+   
+   // Type-safe function
+   function filterTasksByPriority(tasks: Task[], priority: Task['priority']): Task[] {
+     return tasks.filter(task => task.priority === priority);
+   }
+   ```
 
 ### Assignment
 
-Build a Task Manager CLI:
-- [ ] Create command-line interface
-- [ ] Add/remove tasks functionality
-- [ ] Mark tasks as complete
-- [ ] List all tasks
-- [ ] Filter tasks by status
-- [ ] Save tasks to JSON file
+Build a Type-Safe Task Manager CLI in TypeScript:
+- [ ] Set up TypeScript project with proper tsconfig.json
+- [ ] Define interfaces for Task, User, and Project
+- [ ] Create type-safe command-line interface using Commander.js
+- [ ] Implement CRUD operations with full type safety:
+  - Add tasks with validation
+  - Remove tasks by ID
+  - Update task status and priority
+  - List and filter tasks
+- [ ] Add project management features:
+  - Create projects
+  - Assign tasks to projects
+  - View tasks by project
+- [ ] Implement data persistence with type-safe JSON handling
+- [ ] Add input validation using type guards
+- [ ] Include error handling with custom error types
+- [ ] Write at least 5 unit tests using Jest with TypeScript
+
+**Required TypeScript features to demonstrate:**
+- Interfaces and type aliases
+- Generics for reusable functions
+- Union types for command options
+- Type guards for validation
+- Proper typing for async operations
 
 ---
 
@@ -194,44 +236,113 @@ Build [FreshCart Site](https://freshcart-template.codescandy.com/):
 
 ---
 
-## Week 5-6: TypeScript & Build Tools
+## Week 5-6: AI Integration & Build Tools
 
-|                 |                                                                                                        |
-| :-------------- | :----------------------------------------------------------------------------------------------------- |
-| Learning Topics | TypeScript fundamentals, Type safety, Vite build system, Modern project structure                      |
-| Objectives      | Master TypeScript syntax and advanced patterns, Build BudgetY app with Vite + TypeScript + TailwindCSS |
+|                 |                                                                                                            |
+| :-------------- | :--------------------------------------------------------------------------------------------------------- |
+| Learning Topics | AI prompt engineering, IDE AI integration, Vite build system, Modern development workflow with AI          |
+| Objectives      | Master AI-assisted development, Set up Google Gemini in IDE, Build AI-enhanced BudgetY app with TypeScript |
 
-**TypeScript**
+**AI Prompt Engineering (Days 1-3)**
 
-1. Read [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html):
-   - Basic Types
-   - Interfaces
-   - Classes
-   - Functions
-   - Generics
-   - Type inference
-   - Union and Intersection types
-   - Utility types
+1. Complete [Anthropic Prompt Engineering Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
+2. Learn key concepts:
+   - Clear instruction formulation
+   - Context provision strategies
+   - Few-shot prompting
+   - Chain-of-thought reasoning
+   - Common pitfalls and best practices
 
-**Vite**
+**IDE AI Integration (Days 4-5)**
+
+1. **Set up Google Gemini in VS Code/Cursor**
+   ```bash
+   # Install Continue extension for VS Code
+   # Or use Cursor with built-in AI features
+   ```
+
+2. **Configure AI Assistant**
+   - Set up API keys securely
+   - Configure context awareness
+   - Learn keyboard shortcuts
+   - Practice AI-assisted coding patterns
+
+3. **AI Development Workflows**
+   - Code generation from comments
+   - Refactoring with AI assistance
+   - Debugging with AI insights
+   - Documentation generation
+   - Test case generation
+
+**Build Tools with Vite (Days 6-7)**
 1. Read [Vite Documentation](https://vitejs.dev/guide/)
 2. Learn about:
    - Project scaffolding
    - Hot Module Replacement
    - Build optimization
    - Environment variables
+   - Plugin ecosystem
+
+**AI-Powered Development Practices**
+```typescript
+// Example: Using AI to generate TypeScript interfaces
+// Prompt: "Generate TypeScript interfaces for a budget tracking app with transactions, categories, and monthly summaries"
+
+interface Transaction {
+  id: string;
+  amount: number;
+  category: Category;
+  description: string;
+  date: Date;
+  type: 'income' | 'expense';
+}
+
+interface Category {
+  id: string;
+  name: string;
+  icon: string;
+  color: string;
+  budget?: number;
+}
+
+interface MonthlySummary {
+  month: string;
+  year: number;
+  totalIncome: number;
+  totalExpenses: number;
+  categoryBreakdown: Map<string, number>;
+}
+```
 
 ### Assignment
 
-Build [BudgetY App](https://hta218.github.io/budget-y/) with:
-- [ ] Set up project structure with Vite + TypeScript + TailwindCSS
-- [ ] Create type definitions for transactions and categories
-- [ ] Implement add/edit/delete transactions functionality
-- [ ] Build category management system
-- [ ] Add monthly budget tracking
-- [ ] Ensure full TypeScript implementation with no type errors
-- [ ] Make design fully responsive
+Build AI-Enhanced [BudgetY App](https://hta218.github.io/budget-y/) with:
+- [ ] Set up project with Vite + TypeScript + TailwindCSS
+- [ ] Configure AI assistant in your IDE
+- [ ] Use AI to generate initial TypeScript interfaces and types
+- [ ] Implement features with AI assistance:
+  - Transaction CRUD operations
+  - Category management
+  - Budget tracking and alerts
+  - Data visualization components
+- [ ] Add AI-powered features:
+  - Smart transaction categorization
+  - Spending insights generation
+  - Budget recommendations
+- [ ] Document AI prompts used for each major feature
+- [ ] Write unit tests (generate test cases with AI)
+- [ ] Create a development journal documenting:
+  - Effective prompts used
+  - Time saved with AI assistance
+  - Challenges and solutions
 - [ ] Deploy to production
+
+**AI Integration Requirements:**
+- Use AI for at least 50% of code generation
+- Document 10+ effective prompts in markdown file
+- Generate all TypeScript types with AI assistance
+- Create test cases using AI
+- Use AI for code review and optimization
 
 ---
 
@@ -440,50 +551,114 @@ fly secrets set JWT_SECRET=your-secret-here
 
 ## Week 11-12: Advanced Topics & Security
 
-|                 |                                                                                                       |
-| :-------------- | :---------------------------------------------------------------------------------------------------- |
-| Learning Topics | Schema validation, Authentication, Security, React Router, AI integration                             |
-| Objectives      | Implement secure authentication system, Add input validation with Zod, Build AI-powered blog features |
+|                 |                                                                                                          |
+| :-------------- | :------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Schema validation with Zod, Authentication & Authorization, Security best practices, React Router        |
+| Objectives      | Implement secure authentication system, Add comprehensive validation, Build advanced e-commerce features |
 
 **Zod Schema Validation**
 1. Read [Zod Documentation](https://zod.dev)
-2. Add validation to Blog API:
+2. Implement validation patterns:
    ```typescript
    import { z } from 'zod';
    
-   const PostSchema = z.object({
+   // API validation schemas
+   const UserSchema = z.object({
+     email: z.string().email(),
+     password: z.string().min(8).regex(/[A-Z]/, 'Must contain uppercase'),
+     name: z.string().min(2).max(50)
+   });
+   
+   const ProductSchema = z.object({
      title: z.string().min(1).max(200),
-     content: z.string().min(10),
-     published: z.boolean().optional()
+     price: z.number().positive(),
+     category: z.enum(['electronics', 'clothing', 'books', 'other']),
+     stock: z.number().int().min(0)
+   });
+   
+   // Form validation with error messages
+   const LoginSchema = z.object({
+     email: z.string().email('Invalid email address'),
+     password: z.string().min(1, 'Password is required')
    });
    ```
 
-**AI Prompt Engineering**
-1. Complete [Anthropic Prompt Engineering Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
+**Security Best Practices**
+1. **Authentication & Authorization**
+   - JWT implementation with refresh tokens
+   - Role-based access control (RBAC)
+   - Secure password hashing with bcrypt
+   - Session management
 
-**React Router**
+2. **API Security**
+   ```typescript
+   // Rate limiting
+   import rateLimit from 'express-rate-limit';
+   
+   const limiter = rateLimit({
+     windowMs: 15 * 60 * 1000, // 15 minutes
+     max: 100 // limit each IP to 100 requests per windowMs
+   });
+   
+   // CORS configuration
+   const corsOptions = {
+     origin: process.env.FRONTEND_URL,
+     credentials: true,
+     optionsSuccessStatus: 200
+   };
+   
+   // Input sanitization
+   app.use(helmet());
+   app.use(mongoSanitize());
+   ```
+
+**React Router Advanced Patterns**
 
 1. Complete [React Router Tutorial](https://reactrouter.com/en/main/start/tutorial)
-2. Learn:
-   - Route definitions
-   - Nested routes
-   - Dynamic routing
-   - Protected routes
-   - Redirects
+2. Learn advanced concepts:
+   - Route guards and middleware
+   - Lazy loading with code splitting
+   - Nested layouts
+   - Programmatic navigation
+   - Route transitions
 
 ### Assignment
 
-Build an E-commerce Store with Advanced Features:
-- [ ] Create product catalog with category-based routing (`/products/electronics`, `/products/clothing`)
-- [ ] Implement dynamic product detail pages (`/products/:id`)
-- [ ] Build shopping cart with persistent state across routes
-- [ ] Add user authentication with protected routes (`/account/*`)
-- [ ] Build admin dashboard with nested routes (`/admin/products`, `/admin/orders`)
-- [ ] Add functionality to create, update, and delete products for admins
-- [ ] Add Zod validation for all forms (product creation, user registration)
-- [ ] Implement role-based route protection (customer vs admin)
+Build a Secure E-commerce Store with Advanced Features:
+- [ ] Implement comprehensive authentication system:
+  - User registration with email verification
+  - Login with JWT tokens
+  - Password reset functionality
+  - Remember me option
+- [ ] Create product catalog with advanced routing:
+  - Category-based routes (`/products/electronics`)
+  - Search with query parameters
+  - Pagination and filtering
+- [ ] Build secure admin dashboard:
+  - Protected routes with role checking
+  - Product CRUD operations
+  - Order management
+  - User management
+- [ ] Add security features:
+  - Rate limiting on API endpoints
+  - Input validation with Zod on all forms
+  - XSS protection
+  - CSRF tokens
+  - Secure headers with Helmet
+- [ ] Implement shopping cart with:
+  - Persistent state (localStorage + backend)
+  - Guest checkout option
+  - Stock validation
+- [ ] Add payment simulation:
+  - Checkout flow with form validation
+  - Order confirmation
+  - Email notifications (mock)
+- [ ] Performance optimizations:
+  - Lazy load routes
+  - Image optimization
+  - API response caching
 
-*You can ask AI agents for help with complex tasks.*
+*Use the AI assistant you set up in Week 5-6 to help with complex implementations.*
 
 ---
 
