@@ -34,10 +34,10 @@
     - [Assignment](#assignment-4)
   - [Week 11-12: Advanced Topics \& Security](#week-11-12-advanced-topics--security)
     - [Assignment](#assignment-5)
-  - [Week 13-14: Shopify Development](#week-13-14-shopify-development)
-  - [Week 15-16: Weaverse Integration \& Final Project](#week-15-16-weaverse-integration--final-project)
+  - [Week 13: Shopify Development](#week-13-shopify-development)
+  - [Week 14: Weaverse Integration](#week-14-weaverse-integration)
+  - [Week 15-16: Final Project \& Internship Review](#week-15-16-final-project--internship-review)
   - [Graduation](#graduation)
-    - [Next Steps](#next-steps)
 
 ---
 
@@ -423,17 +423,15 @@ Build an E-commerce Store with Advanced Features:
 
 ---
 
-## Week 13-14: Shopify Development
+## Week 13: Shopify Development
 
 |                 |                                                                                                        |
 | :-------------- | :----------------------------------------------------------------------------------------------------- |
 | Learning Topics | Shopify ecosystem, Partner account, Admin APIs, Hydrogen framework, Headless commerce                  |
 | Objectives      | Set up Shopify development environment, Build custom Hydrogen storefront, Implement cart functionality |
 
-**Week 13: Shopify Basics**
-
-**Shopify Setup**
-1. Create partner account
+**Shopify Basics**
+1. Create a partner account
 2. Set up development store
 3. Explore admin interface
 4. Understand Shopify concepts:
@@ -441,13 +439,7 @@ Build an E-commerce Store with Advanced Features:
    - Orders and customers
    - Themes and apps
 
-**Shopify APIs**
-- REST Admin API
-- GraphQL Admin API
-- Storefront API
-- Webhook handling
-
-**Week 14: Hydrogen Development**
+**Shopify Hydrogen Development**
 
 **Hydrogen Setup**
 1. Read [Hydrogen Documentation](https://shopify.dev/docs/custom-storefronts/hydrogen)
@@ -463,33 +455,14 @@ Build features:
 - Shopping cart
 - Checkout redirect
 
-**Week 13-14 Assignment**
-
-Shopify Storefront:
-- [ ] Create Shopify Partner account and development store
-- [ ] Set up product catalog with sample products
-- [ ] Initialize Hydrogen project with TypeScript
-- [ ] Build responsive product listing page
-- [ ] Create product detail pages with image galleries
-- [ ] Implement shopping cart functionality
-- [ ] Add cart persistence and quantity management
-- [ ] Build checkout redirect to Shopify
-- [ ] Style entire storefront with TailwindCSS
-- [ ] Implement search and filtering
-- [ ] Add customer account features
-- [ ] Deploy to Shopify Oxygen platform
-- [ ] Test all e-commerce workflows
-
 ---
 
-## Week 15-16: Weaverse Integration & Final Project
+## Week 14: Weaverse Integration
 
 |                 |                                                                                                       |
 | :-------------- | :---------------------------------------------------------------------------------------------------- |
 | Learning Topics | Weaverse SDK, Visual components, Component schemas, Final project integration                         |
 | Objectives      | Master Weaverse platform, Create custom visual components, Build complete e-commerce capstone project |
-
-**Week 15: Weaverse Development**
 
 **Weaverse Setup**
 1. Read [Weaverse Documentation](https://weaverse.io/docs)
@@ -504,29 +477,9 @@ Shopify Storefront:
 - Implement visual editing
 - Test in Weaverse Studio
 
-**Week 16: Capstone Project**
+## Week 15-16: Final Project & Internship Review
 
-**Final Project Requirements:**
-Build a complete e-commerce site with:
-1. **Shopify Integration**
-   - Product catalog
-   - Shopping cart
-   - Customer accounts
-
-2. **Weaverse Features**
-   - Visual page building
-   - Custom components
-   - Theme settings
-
-3. **Technical Requirements**
-   - TypeScript throughout
-   - Responsive design
-   - Performance optimized
-   - SEO friendly
-
-**Week 15-16 Assignment**
-
-Capstone E-commerce Project:
+Build a complete Weaverse Hydrogen theme:
 - [ ] Set up Weaverse + Hydrogen project
 - [ ] Create custom visual components with schemas
 - [ ] Build product catalog with Shopify integration
@@ -542,8 +495,6 @@ Capstone E-commerce Project:
 - [ ] Create deployment guide
 - [ ] Prepare final presentation
 - [ ] Document future improvements
-
-**Final Assessment**
 
 **Presentation & Review**
 - Live demo of project
@@ -564,10 +515,8 @@ Congratulations! You've completed the Weaverse Developer Internship Program. You
 - Production deployment knowledge
 - Professional development practices
 
-### Next Steps
-- Continue building with Weaverse
-- Contribute to open source
-- Apply for full-time positions
-- Keep learning and growing!
+Happy learning and growing!
 
-Welcome to the Weaverse developer community!
+---
+
+*The Weaverse Team 🤝*
