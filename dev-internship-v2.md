@@ -121,8 +121,6 @@ git config --global user.email "your.email@example.com"
 | Learning Topics | Core JavaScript, ES6+ features, Functional programming, Asynchronous JavaScript, Problem-solving       |
 | Objectives      | Complete 45 Exercism exercises, Master array methods and promises, Build a functional CLI task manager |
 
-**JavaScript Basics**
-
 **Beginner JavaScript (Skip if already familiar)**
 1. Complete [JavaScript Beginner Tutorial](https://www.w3schools.com/js/default.asp)
 
@@ -173,8 +171,6 @@ Build a Task Manager CLI:
 | :-------------- | :------------------------------------------------------------------------------------------------------- |
 | Learning Topics | Flexbox, CSS Grid, Responsive design, TailwindCSS, Modern styling patterns                               |
 | Objectives      | Complete Flexbox Froggy and Grid Garden, Build responsive FreshCart template clone with TailwindCSS only |
-
-**CSS Fundamentals**
 
 **Flexbox & Grid**
 1. Complete all levels at [Flexbox Froggy](https://flexboxfroggy.com/)
@@ -339,10 +335,10 @@ model Comment {
 
 ## Week 9-10: React
 
-|                 |                                                                                                 |
-| :-------------- | :---------------------------------------------------------------------------------------------- |
-| Learning Topics | React components, Hooks, State management, TypeScript integration, Frontend development         |
-| Objectives      | Master React fundamentals, Build complete Blog frontend with TypeScript, Connect to backend API |
+|                 |                                                                                                                          |
+| :-------------- | :----------------------------------------------------------------------------------------------------------------------- |
+| Learning Topics | React components, Hooks, State management with Preact Signals, ShadcnUI components, TypeScript integration, Deployment |
+| Objectives      | Master React fundamentals, Build complete Blog frontend with modern UI components, Deploy to production                  |
 
 **React Basics**
 
@@ -357,10 +353,60 @@ model Comment {
    - Custom hooks
    - Rules of hooks
 
+**Modern UI with ShadcnUI**
+
+1. Set up ShadcnUI in your project:
+   ```bash
+   npx shadcn-ui@latest init
+   ```
+2. Install essential components:
+   ```bash
+   npx shadcn-ui@latest add button card dialog form input label
+   npx shadcn-ui@latest add dropdown-menu toast alert
+   ```
+3. Learn component customization with TailwindCSS
+4. Understand the copy-paste component philosophy
+
+**State Management with Preact Signals**
+
+1. Install Preact Signals:
+   ```bash
+   npm install @preact/signals-react
+   ```
+2. Create global state stores:
+   ```typescript
+   // stores/authStore.ts
+   import { signal, computed } from '@preact/signals-react';
+   
+   export const currentUser = signal<User | null>(null);
+   export const isAuthenticated = computed(() => currentUser.value !== null);
+   
+   // stores/blogStore.ts
+   export const posts = signal<Post[]>([]);
+   export const selectedPost = signal<Post | null>(null);
+   export const isLoading = signal(false);
+   ```
+3. Learn signal patterns:
+   - Creating reactive state
+   - Computed values
+   - Effects and subscriptions
+   - No providers needed!
+
 ### Assignment
 
-Complete Blog Platform:
-- [ ] Set up React project with TypeScript and TailwindCSS
+Complete Blog Platform with Modern Stack:
+- [ ] Set up React project with TypeScript, TailwindCSS, and ShadcnUI
+- [ ] Use ShadcnUI components for:
+  - Form inputs and validation
+  - Cards for post display
+  - Dialogs for confirmations
+  - Toast notifications for user feedback
+  - Dropdown menus for user actions
+- [ ] Implement state management with Preact Signals:
+  - User authentication state
+  - Blog posts and comments state
+  - Loading and error states
+  - Theme preferences
 - [ ] Create responsive layout components
 - [ ] Implement user authentication UI
 - [ ] Build post listing and detail views
@@ -368,9 +414,27 @@ Complete Blog Platform:
 - [ ] Implement comment system
 - [ ] Add search and filtering features
 - [ ] Connect to backend API with proper error handling
-- [ ] Add loading states and user feedback
-- [ ] Include form validation
-- [ ] Deploy both frontend and backend
+- [ ] Include form validation with react-hook-form
+- [ ] Deploy to production:
+  - Frontend to Vercel
+  - Backend to Fly.io or Vercel Functions
+  - Configure environment variables
+  - Set up custom domain (optional)
+
+**Deployment Steps:**
+```bash
+# Frontend deployment to Vercel
+npm install -g vercel
+vercel
+# Follow prompts to configure project
+
+# Backend deployment to Fly.io
+curl -L https://fly.io/install.sh | sh
+fly launch
+fly deploy
+# Configure DATABASE_URL and other secrets
+fly secrets set JWT_SECRET=your-secret-here
+```
 
 ---
 
