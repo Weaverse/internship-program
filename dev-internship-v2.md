@@ -3,7 +3,7 @@
   
   # Weaverse Developer Internship Program
   
-  A comprehensive 16-week curriculum designed to transform interns/freshers with basic programming knowledge into skilled full-stack developers specializing in modern e-commerce development.
+  A comprehensive curriculum designed to transform interns/freshers with basic programming knowledge into skilled full-stack developers specializing in modern e-commerce development.
   
   **[How to Apply](README.md#how-to-apply)** | **[Contact Us](README.md#contact)**
 </div>
@@ -110,10 +110,10 @@ git config --global user.email "your.email@example.com"
 
 ## Week 1-2: JavaScript Fundamentals
 
-| | |
-|:---|:---|
-| Learning Topics | • Core JavaScript<br>• ES6+ features<br>• Functional programming<br>• Asynchronous JavaScript<br>• Problem-solving |
-| Objectives      | • Complete 45 Exercism exercises<br>• Master array methods and promises<br>• Build a functional CLI task manager |
+|                 |                                                                                                                    |
+| :-------------- | :----------------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Core JavaScript, ES6+ features, Functional programming, Asynchronous JavaScript, Problem-solving |
+| Objectives      | Complete 45 Exercism exercises, Master array methods and promises, Build a functional CLI task manager |
 
 **JavaScript Basics**
 
@@ -166,10 +166,10 @@ Build a Task Manager CLI:
 
 ## Week 3-4: CSS & Modern Styling
 
-| | |
-|:---|:---|
-| Learning Topics | • Flexbox<br>• CSS Grid<br>• Responsive design<br>• TailwindCSS<br>• Modern styling patterns             |
-| Objectives      | • Complete Flexbox Froggy and Grid Garden<br>• Build responsive FreshCart template clone with TailwindCSS only |
+|                 |                                                                                                                |
+| :-------------- | :------------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Flexbox, CSS Grid, Responsive design, TailwindCSS, Modern styling patterns |
+| Objectives      | Complete Flexbox Froggy and Grid Garden, Build responsive FreshCart template clone with TailwindCSS only |
 
 **CSS Fundamentals**
 
@@ -231,10 +231,10 @@ Complete FreshCart Clone:
 
 ## Week 5-6: TypeScript & Build Tools
 
-| | |
-|:---|:---|
-| Learning Topics | • TypeScript fundamentals<br>• Type safety<br>• Vite build system<br>• Modern project structure        |
-| Objectives      | • Master TypeScript syntax and advanced patterns<br>• Build BudgetY app with Vite + TypeScript + TailwindCSS |
+|                 |                                                                                                              |
+| :-------------- | :----------------------------------------------------------------------------------------------------------- |
+| Learning Topics | TypeScript fundamentals, Type safety, Vite build system, Modern project structure |
+| Objectives      | Master TypeScript syntax and advanced patterns, Build BudgetY app with Vite + TypeScript + TailwindCSS |
 
 **TypeScript**
 
@@ -294,10 +294,10 @@ Complete BudgetY App:
 
 ## Week 7-8: Node.js & Backend Development
 
-| | |
-|:---|:---|
-| Learning Topics | • Node.js ecosystem<br>• Express.js<br>• REST APIs<br>• Database design<br>• Prisma ORM  |
-| Objectives      | • Build complete Blog API with authentication<br>• Implement CRUD operations<br>• Create database relationships |
+|                 |                                                                                                                 |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Node.js ecosystem, Express.js, REST APIs, Database design, Prisma ORM |
+| Objectives      | Build complete Blog API with authentication, Implement CRUD operations, Create database relationships |
 
 **Week 7: Node.js & Express**
 
@@ -405,10 +405,10 @@ model Comment {
 
 ## Week 9-10: React Fundamentals
 
-| | |
-|:---|:---|
-| Learning Topics | • React components<br>• Hooks<br>• State management<br>• TypeScript integration<br>• Frontend development |
-| Objectives      | • Master React fundamentals<br>• Build complete Blog frontend with TypeScript<br>• Connect to backend API |
+|                 |                                                                                                           |
+| :-------------- | :-------------------------------------------------------------------------------------------------------- |
+| Learning Topics | React components, Hooks, State management, TypeScript integration, Frontend development |
+| Objectives      | Master React fundamentals, Build complete Blog frontend with TypeScript, Connect to backend API |
 
 **Week 9: React Basics**
 
@@ -463,10 +463,10 @@ Complete Blog Platform:
 
 ## Week 11-12: Advanced Topics & Security
 
-| | |
-|:---|:---|
-| Learning Topics | • Schema validation<br>• Authentication<br>• Security<br>• React Router<br>• AI integration           |
-| Objectives      | • Implement secure authentication system<br>• Add input validation with Zod<br>• Build AI-powered blog features |
+|                 |                                                                                                                 |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Schema validation, Authentication, Security, React Router, AI integration |
+| Objectives      | Implement secure authentication system, Add input validation with Zod, Build AI-powered blog features |
 
 **Week 11: Validation & Security**
 
@@ -527,10 +527,10 @@ Secure Blog Platform:
 
 ## Week 13-14: Shopify Development
 
-| | |
-|:---|:---|
-| Learning Topics | • Shopify ecosystem<br>• Partner account<br>• Admin APIs<br>• Hydrogen framework<br>• Headless commerce |
-| Objectives      | • Set up Shopify development environment<br>• Build custom Hydrogen storefront<br>• Implement cart functionality |
+|                 |                                                                                                                  |
+| :-------------- | :--------------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Shopify ecosystem, Partner account, Admin APIs, Hydrogen framework, Headless commerce |
+| Objectives      | Set up Shopify development environment, Build custom Hydrogen storefront, Implement cart functionality |
 
 **Week 13: Shopify Basics**
 
@@ -586,10 +586,10 @@ Shopify Storefront:
 
 ## Week 15-16: Weaverse Integration & Final Project
 
-| | |
-|:---|:---|
-| Learning Topics | • Weaverse SDK<br>• Visual components<br>• Component schemas<br>• Final project integration           |
-| Objectives      | • Master Weaverse platform<br>• Create custom visual components<br>• Build complete e-commerce capstone project |
+|                 |                                                                                                                 |
+| :-------------- | :-------------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Weaverse SDK, Visual components, Component schemas, Final project integration |
+| Objectives      | Master Weaverse platform, Create custom visual components, Build complete e-commerce capstone project |
 
 **Week 15: Weaverse Development**
 
