@@ -102,31 +102,29 @@ git config --global user.email "your.email@example.com"
 
 ## Week 1-2: JavaScript Fundamentals
 
-### Learning Objectives
-- Master JavaScript basics and ES6+ features
-- Understand asynchronous programming
-- Practice problem-solving with coding exercises
+| **Learning Topics** | • Core JavaScript<br>• ES6+ features<br>• Functional programming<br>• Asynchronous JavaScript<br>• Problem-solving |
+|---|---|
+| **Objectives** | Complete 45 Exercism exercises, Master array methods and promises, Build a functional CLI task manager |
 
-### Week 1: JavaScript Basics
+**JavaScript Basics**
+
+**Beginner JavaScript (Skip if already familiar)**
+1. Complete [JavaScript Beginner Tutorial](https://www.w3schools.com/js/default.asp)
 
 **Core JavaScript**
-1. Register on [Exercism](https://exercism.org/tracks/javascript)
-2. Complete these exercises in order:
-   - Hello World
-   - Two Fer
-   - Resistor Color
-   - Gigasecond
-   - RNA Transcription
+1. Register an account on [Exercism](https://exercism.org/tracks/javascript)
+2. Complete the following exercises by difficulty:
+   - **20 Easy exercises** - Start with basics and build confidence
+   - **20 Medium exercises** - Apply concepts in more complex scenarios
+   - **5 Hard exercises** - Challenge yourself with advanced problems
+3. Focus on understanding:
+   - Variables and data types
+   - Functions and scope
+   - Arrays and objects
+   - Control flow and loops
+   - String manipulation
 
-**Functions & Arrays**
-- Complete Exercism exercises:
-  - Space Age
-  - Pangram
-  - Matrix
-  - Bob
-  - Allergies
-
-### Week 2: Advanced JavaScript
+**Advanced JavaScript**
 
 **Functional Programming**
 1. Start [LearnRx Interactive Tutorial](https://reactivex.io/learnrx/)
@@ -144,34 +142,26 @@ git config --global user.email "your.email@example.com"
   - Async/Await
   - Event handling
 
-### Week 1-2 Assignment
+**Week 1-2 Assignment**
 
-**Build a Task Manager CLI**
-Create a command-line task manager with:
-- Add/remove tasks
-- Mark tasks as complete
-- List all tasks
-- Filter tasks by status
-- Save tasks to JSON file
-
-```javascript
-// Example usage
-node task-manager.js add "Learn JavaScript"
-node task-manager.js list
-node task-manager.js complete 1
-node task-manager.js remove 1
-```
+Build a Task Manager CLI:
+- [ ] Create command-line interface
+- [ ] Add/remove tasks functionality
+- [ ] Mark tasks as complete
+- [ ] List all tasks
+- [ ] Filter tasks by status
+- [ ] Save tasks to JSON file
+- [ ] Include example usage documentation
 
 ---
 
 ## Week 3-4: CSS & Modern Styling
 
-### Learning Objectives
-- Master CSS layout techniques (Flexbox, Grid)
-- Learn utility-first CSS with TailwindCSS
-- Build responsive, modern interfaces
+| **Learning Topics** | • Flexbox<br>• CSS Grid<br>• Responsive design<br>• TailwindCSS<br>• Modern styling patterns |
+|---|---|
+| **Objectives** | Complete Flexbox Froggy and Grid Garden, Build responsive FreshCart template clone with TailwindCSS only |
 
-### Week 3: CSS Fundamentals
+**CSS Fundamentals**
 
 **Flexbox Mastery**
 1. Complete all levels at [Flexbox Froggy](https://flexboxfroggy.com/)
@@ -192,7 +182,7 @@ node task-manager.js remove 1
 - Mobile-first approach
 - Viewport units and techniques
 
-### Week 4: TailwindCSS
+**TailwindCSS**
 
 **TailwindCSS Basics**
 1. Read [TailwindCSS Documentation](https://tailwindcss.com/docs)
@@ -214,24 +204,28 @@ node task-manager.js remove 1
     - Features section
     - Footer
 
-### Week 3-4 Assignment
+**Week 3-4 Assignment**
 
-**Complete FreshCart Clone**
-- All pages must be responsive
-- Use TailwindCSS utilities only
-- Include hover states and transitions
-- Deploy to GitHub Pages
+Complete FreshCart Clone:
+- [ ] Build fully responsive design
+- [ ] Use only TailwindCSS (no custom CSS)
+- [ ] Implement header with navigation
+- [ ] Create hero section
+- [ ] Build product grid layout
+- [ ] Add features section
+- [ ] Design footer component
+- [ ] Include hover states and transitions
+- [ ] Deploy to GitHub Pages
 
 ---
 
 ## Week 5-6: TypeScript & Build Tools
 
-### Learning Objectives
-- Understand TypeScript fundamentals
-- Master modern build tools with Vite
-- Build type-safe applications
+| **Learning Topics** | • TypeScript fundamentals<br>• Type safety<br>• Vite build system<br>• Modern project structure |
+|---|---|
+| **Objectives** | Master TypeScript syntax and advanced patterns, Build BudgetY app with Vite + TypeScript + TailwindCSS |
 
-### Week 5: TypeScript
+**TypeScript**
 
 **TypeScript Basics**
 1. Read [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html):
@@ -251,7 +245,7 @@ node task-manager.js remove 1
 - Event handling
 - Type declarations
 
-### Week 6: Vite & Project Building
+**Vite & Project Building**
 
 **Vite Fundamentals**
 1. Read [Vite Documentation](https://vitejs.dev/guide/)
@@ -271,40 +265,29 @@ Build [BudgetY App](https://hta218.github.io/budget-y/) with:
   - Data visualization
   - Local storage persistence
 
-### Week 5-6 Assignment
+**Week 5-6 Assignment**
 
-**Complete BudgetY App**
-```bash
-# Project structure
-budget-y/
-├── src/
-│   ├── types/
-│   ├── utils/
-│   ├── components/
-│   └── main.ts
-├── index.html
-├── package.json
-├── tsconfig.json
-├── tailwind.config.js
-└── vite.config.ts
-```
-
-Requirements:
-- Full TypeScript implementation
-- No type errors
-- Responsive design
-- Deploy to production
+Complete BudgetY App:
+- [ ] Set up project structure with Vite + TypeScript + TailwindCSS
+- [ ] Create type definitions for transactions and categories
+- [ ] Implement add/edit/delete transactions functionality
+- [ ] Build category management system
+- [ ] Add monthly budget tracking
+- [ ] Create data visualization components
+- [ ] Implement local storage persistence
+- [ ] Ensure full TypeScript implementation with no type errors
+- [ ] Make design fully responsive
+- [ ] Deploy to production
 
 ---
 
 ## Week 7-8: Node.js & Backend Development
 
-### Learning Objectives
-- Understand Node.js and npm ecosystem
-- Build REST APIs with Express
-- Work with databases using Prisma ORM
+| **Learning Topics** | • Node.js ecosystem<br>• Express.js<br>• REST APIs<br>• Database design<br>• Prisma ORM |
+|---|---|
+| **Objectives** | Build complete Blog API with authentication, CRUD operations, and database relationships |
 
-### Week 7: Node.js & Express
+**Week 7: Node.js & Express**
 
 **Node.js Fundamentals**
 - Node.js basics and modules
@@ -329,7 +312,7 @@ Requirements:
    app.listen(3000);
    ```
 
-### Week 8: Database & Prisma
+**Week 8: Database & Prisma**
 
 **Prisma Setup**
 1. Follow [Prisma Getting Started](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgresql)
@@ -345,10 +328,21 @@ Create a REST API with:
 - Comments system
 - Categories and tags
 
-### Week 7-8 Assignment
+**Week 7-8 Assignment**
 
-**Blog API Project**
-Endpoints to implement:
+Complete Blog API Project:
+- [ ] Set up Node.js project with Express and TypeScript
+- [ ] Configure Prisma with PostgreSQL database
+- [ ] Implement user authentication (register/login)
+- [ ] Create CRUD operations for posts
+- [ ] Build comments system
+- [ ] Add categories and tags functionality
+- [ ] Implement JWT-based authentication
+- [ ] Add input validation and error handling
+- [ ] Include API documentation
+- [ ] Deploy to production
+
+**Required Endpoints:**
 ```
 POST   /api/auth/register
 POST   /api/auth/login
@@ -360,7 +354,7 @@ DELETE /api/posts/:id
 POST   /api/posts/:id/comments
 ```
 
-Database schema:
+**Database Schema:**
 ```prisma
 model User {
   id        String   @id @default(cuid())
@@ -399,12 +393,11 @@ model Comment {
 
 ## Week 9-10: React Fundamentals
 
-### Learning Objectives
-- Master React component development
-- Understand hooks and state management
-- Build interactive user interfaces
+| **Learning Topics** | • React components<br>• Hooks<br>• State management<br>• TypeScript integration<br>• Frontend development |
+|---|---|
+| **Objectives** | Master React fundamentals, Build complete Blog frontend with TypeScript, Connect to backend API |
 
-### Week 9: React Basics
+**Week 9: React Basics**
 
 **React Fundamentals**
 1. Read [React Documentation](https://react.dev/learn)
@@ -421,7 +414,7 @@ model Comment {
 - Custom hooks
 - Rules of hooks
 
-### Week 10: Building with React
+**Week 10: Building with React**
 
 **React with TypeScript**
 - Type-safe components
@@ -437,25 +430,31 @@ Build a React frontend for your Blog API:
 - Comment system
 - Search and filtering
 
-### Week 9-10 Assignment
+**Week 9-10 Assignment**
 
-**Complete Blog Platform**
-- Connect React frontend to Express API
-- Implement all CRUD operations
-- Add loading states and error handling
-- Style with TailwindCSS
-- Deploy frontend and backend
+Complete Blog Platform:
+- [ ] Set up React project with TypeScript and TailwindCSS
+- [ ] Create responsive layout components
+- [ ] Implement user authentication UI
+- [ ] Build post listing and detail views
+- [ ] Add create/edit post functionality
+- [ ] Implement comment system
+- [ ] Add search and filtering features
+- [ ] Connect to backend API with proper error handling
+- [ ] Add loading states and user feedback
+- [ ] Include form validation
+- [ ] Deploy both frontend and backend
+- [ ] Write user documentation
 
 ---
 
 ## Week 11-12: Advanced Topics & Security
 
-### Learning Objectives
-- Implement data validation with Zod
-- Add authentication and security
-- Master React Router for navigation
+| **Learning Topics** | • Schema validation<br>• Authentication<br>• Security<br>• React Router<br>• AI integration |
+|---|---|
+| **Objectives** | Implement secure authentication system, Add input validation with Zod, Build AI-powered blog features |
 
-### Week 11: Validation & Security
+**Week 11: Validation & Security**
 
 **Zod Schema Validation**
 1. Read [Zod Documentation](https://zod.dev)
@@ -477,7 +476,7 @@ Build a React frontend for your Blog API:
 - Rate limiting
 - CORS configuration
 
-### Week 12: React Router & AI
+**Week 12: React Router & AI**
 
 **React Router**
 1. Complete [React Router Tutorial](https://reactrouter.com/en/main/start/tutorial)
@@ -494,25 +493,31 @@ Build a React frontend for your Blog API:
    - Auto-tagging
    - Comment moderation
 
-### Week 11-12 Assignment
+**Week 11-12 Assignment**
 
-**Secure Blog Platform**
-- Implement full authentication flow
-- Add input validation everywhere
-- Create admin dashboard
-- Include AI-powered features
-- Write security documentation
+Secure Blog Platform:
+- [ ] Implement Zod validation for all API endpoints
+- [ ] Add client-side form validation
+- [ ] Set up JWT authentication with refresh tokens
+- [ ] Implement password hashing with bcrypt
+- [ ] Add rate limiting and CORS configuration
+- [ ] Create protected routes in React Router
+- [ ] Build admin dashboard with user management
+- [ ] Integrate AI features (content suggestions, auto-tagging)
+- [ ] Add comment moderation system
+- [ ] Implement security headers and best practices
+- [ ] Write comprehensive security documentation
+- [ ] Conduct security testing and code review
 
 ---
 
 ## Week 13-14: Shopify Development
 
-### Learning Objectives
-- Understand Shopify ecosystem
-- Set up development store
-- Build with Shopify Hydrogen
+| **Learning Topics** | • Shopify ecosystem<br>• Partner account<br>• Admin APIs<br>• Hydrogen framework<br>• Headless commerce |
+|---|---|
+| **Objectives** | Set up Shopify development environment, Build custom Hydrogen storefront with cart functionality |
 
-### Week 13: Shopify Basics
+**Week 13: Shopify Basics**
 
 **Shopify Setup**
 1. Create partner account
@@ -529,7 +534,7 @@ Build a React frontend for your Blog API:
 - Storefront API
 - Webhook handling
 
-### Week 14: Hydrogen Development
+**Week 14: Hydrogen Development**
 
 **Hydrogen Setup**
 1. Read [Hydrogen Documentation](https://shopify.dev/docs/custom-storefronts/hydrogen)
@@ -545,25 +550,32 @@ Build features:
 - Shopping cart
 - Checkout redirect
 
-### Week 13-14 Assignment
+**Week 13-14 Assignment**
 
-**Shopify Storefront**
-- Create custom Hydrogen storefront
-- Implement product catalog
-- Add cart functionality
-- Style with TailwindCSS
-- Deploy to Oxygen
+Shopify Storefront:
+- [ ] Create Shopify Partner account and development store
+- [ ] Set up product catalog with sample products
+- [ ] Initialize Hydrogen project with TypeScript
+- [ ] Build responsive product listing page
+- [ ] Create product detail pages with image galleries
+- [ ] Implement shopping cart functionality
+- [ ] Add cart persistence and quantity management
+- [ ] Build checkout redirect to Shopify
+- [ ] Style entire storefront with TailwindCSS
+- [ ] Implement search and filtering
+- [ ] Add customer account features
+- [ ] Deploy to Shopify Oxygen platform
+- [ ] Test all e-commerce workflows
 
 ---
 
 ## Week 15-16: Weaverse Integration & Final Project
 
-### Learning Objectives
-- Integrate Weaverse SDK
-- Build visual components
-- Complete capstone project
+| **Learning Topics** | • Weaverse SDK<br>• Visual components<br>• Component schemas<br>• Final project integration |
+|---|---|
+| **Objectives** | Master Weaverse platform, Create custom visual components, Build complete e-commerce capstone project |
 
-### Week 15: Weaverse Development
+**Week 15: Weaverse Development**
 
 **Weaverse Setup**
 1. Read [Weaverse Documentation](https://weaverse.io/docs)
@@ -578,7 +590,7 @@ Build features:
 - Implement visual editing
 - Test in Weaverse Studio
 
-### Week 16: Capstone Project
+**Week 16: Capstone Project**
 
 **Final Project Requirements:**
 Build a complete e-commerce site with:
@@ -598,7 +610,26 @@ Build a complete e-commerce site with:
    - Performance optimized
    - SEO friendly
 
-### Final Assessment
+**Week 15-16 Assignment**
+
+Capstone E-commerce Project:
+- [ ] Set up Weaverse + Hydrogen project
+- [ ] Create custom visual components with schemas
+- [ ] Build product catalog with Shopify integration
+- [ ] Implement shopping cart and checkout
+- [ ] Add customer account management
+- [ ] Create visual page builder experience
+- [ ] Design responsive theme with TailwindCSS
+- [ ] Implement SEO optimization
+- [ ] Add performance monitoring
+- [ ] Include comprehensive testing
+- [ ] Deploy to production
+- [ ] Write technical documentation
+- [ ] Create deployment guide
+- [ ] Prepare final presentation
+- [ ] Document future improvements
+
+**Final Assessment**
 
 **Presentation & Review**
 - Live demo of project
