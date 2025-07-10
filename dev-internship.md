@@ -23,22 +23,51 @@
     - [English for Developers (Self-Study, Recommended)](#english-for-developers-self-study-recommended)
     - [Orientation \& Setup](#orientation--setup)
   - [Week 1-2: JavaScript \& TypeScript](#week-1-2-javascript--typescript)
-    - [Assignment](#assignment)
+      - [Beginner JavaScript (Skip if already familiar)](#beginner-javascript-skip-if-already-familiar)
+      - [Core JavaScript (Days 1-3)](#core-javascript-days-1-3)
+      - [Functional Programming (Days 4-5)](#functional-programming-days-4-5)
+      - [TypeScript Fundamentals (Days 6-10)](#typescript-fundamentals-days-6-10)
+      - [Building Command-Line Applications (Days 11-12)](#building-command-line-applications-days-11-12)
+      - [Assignment](#assignment)
   - [Week 3-4: CSS \& Modern Styling](#week-3-4-css--modern-styling)
-    - [Assignment](#assignment-1)
+      - [Flexbox \& Grid](#flexbox--grid)
+      - [TailwindCSS](#tailwindcss)
+      - [Assignment](#assignment-1)
   - [Week 5-6: AI Integration \& Build Tools](#week-5-6-ai-integration--build-tools)
-    - [Assignment](#assignment-2)
+      - [AI Prompt Engineering (Days 1-3)](#ai-prompt-engineering-days-1-3)
+      - [IDE AI Integration (Days 4-5)](#ide-ai-integration-days-4-5)
+      - [Build Tools with Vite (Days 6-7)](#build-tools-with-vite-days-6-7)
+      - [AI-Powered Development Practices](#ai-powered-development-practices)
+      - [Assignment](#assignment-2)
   - [Week 7-8: Node.js \& Backend Development](#week-7-8-nodejs--backend-development)
-    - [Assignment](#assignment-3)
+      - [Node.js Fundamentals](#nodejs-fundamentals)
+      - [Express.js](#expressjs)
+      - [Database \& Prisma](#database--prisma)
+      - [Assignment](#assignment-3)
+      - [Testing Your API:](#testing-your-api)
+      - [Required Endpoints:](#required-endpoints)
+      - [Database Schema:](#database-schema)
   - [Week 9-10: React](#week-9-10-react)
-    - [Assignment](#assignment-4)
+      - [React Basics](#react-basics)
+      - [Modern UI with ShadcnUI](#modern-ui-with-shadcnui)
+      - [State Management with Preact Signals](#state-management-with-preact-signals)
+      - [Assignment](#assignment-4)
   - [Week 11-12: Advanced Topics \& Security](#week-11-12-advanced-topics--security)
-    - [Assignment](#assignment-5)
+      - [Zod Schema Validation](#zod-schema-validation)
+      - [React Router Advanced Patterns](#react-router-advanced-patterns)
+      - [Assignment](#assignment-5)
   - [Week 13: Shopify Development](#week-13-shopify-development)
-    - [Assignment 1: Shopify Store Setup](#assignment-1-shopify-store-setup)
-    - [Assignment 2: Hydrogen Storefront Development](#assignment-2-hydrogen-storefront-development)
+      - [Shopify Basics](#shopify-basics)
+      - [Assignment 1: Shopify Store Setup](#assignment-1-shopify-store-setup)
+      - [Shopify Hydrogen Development](#shopify-hydrogen-development)
+      - [Hydrogen Setup](#hydrogen-setup)
+      - [Assignment 2: Hydrogen Storefront Development](#assignment-2-hydrogen-storefront-development)
+      - [Example GraphQL Queries for Practice:](#example-graphql-queries-for-practice)
   - [Week 14: Weaverse Integration](#week-14-weaverse-integration)
+      - [Weaverse Setup](#weaverse-setup)
+      - [Component Development](#component-development)
   - [Week 15-16: Final Project \& Internship Review](#week-15-16-final-project--internship-review)
+      - [Presentation \& Review](#presentation--review)
   - [Graduation](#graduation)
 
 ---
@@ -84,7 +113,7 @@ By completing this program, interns will:
 ### English for Developers (Self-Study, Recommended)
 
 Before starting the official program, we recommend completing:
-- [FreeCodeCamp English for Developers](https://www.freecodecamp.org/learn/b1-english-for-developers/)
+- [FreeCodeCamp English for Developers](https://www.freecodecamp.org/learn/b1-english-for-developers/) (B1 level, skip if already fluent)
 - Study at home during your free time
 - Essential for reading documentation and communicating with team members
 
@@ -123,10 +152,10 @@ git config --global user.email "your.email@example.com"
 | Learning Topics | Core JavaScript, ES6+ features, Functional programming, TypeScript fundamentals, Type-safe development      |
 | Objectives      | Complete 30 JS exercises, Master TypeScript basics, Build a type-safe CLI task manager with full TypeScript |
 
-**Beginner JavaScript (Skip if already familiar)**
+#### Beginner JavaScript (Skip if already familiar)
 1. Complete [JavaScript Beginner Tutorial](https://www.w3schools.com/js/default.asp)
 
-**Core JavaScript (Days 1-3)**
+#### Core JavaScript (Days 1-3)
 1. Register an account on [Exercism](https://exercism.org/tracks/javascript)
 2. Complete the following exercises:
    - **15 Easy exercises** - Start with basics and build confidence
@@ -139,7 +168,7 @@ git config --global user.email "your.email@example.com"
    - Control flow and loops
    - String manipulation
 
-**Functional Programming (Days 4-5)**
+#### Functional Programming (Days 4-5)
 1. Start [LearnRx Interactive Tutorial](https://reactivex.io/learnrx/)
 2. Complete exercises 1-20 (Arrays and Functions)
 3. Focus on:
@@ -148,7 +177,7 @@ git config --global user.email "your.email@example.com"
    - Immutability concepts
    - Promises and Async/Await
 
-**TypeScript Fundamentals (Days 6-10)**
+#### TypeScript Fundamentals (Days 6-10)
 1. Read [TypeScript Handbook - The Basics](https://www.typescriptlang.org/docs/handbook/2/basics.html)
 2. Set up TypeScript environment:
    ```bash
@@ -180,7 +209,7 @@ git config --global user.email "your.email@example.com"
    }
    ```
 
-**Building Command-Line Applications (Days 11-12)**
+#### Building Command-Line Applications (Days 11-12)
 
 1. Install Commander.js for CLI development:
    ```bash
@@ -240,7 +269,7 @@ git config --global user.email "your.email@example.com"
    }
    ```
 
-### Assignment
+#### Assignment
 
 Build a Type-Safe Task Manager CLI in TypeScript:
 - [ ] Set up TypeScript project with proper tsconfig.json
@@ -253,13 +282,6 @@ Build a Type-Safe Task Manager CLI in TypeScript:
   - List and filter tasks
   - Save tasks to JSON file
 
-**Required TypeScript features to demonstrate:**
-- Interfaces and type aliases
-- Generics for reusable functions
-- Union types for command options
-- Type guards for validation
-- Proper typing for async operations
-
 ---
 
 ## Week 3-4: CSS & Modern Styling
@@ -269,11 +291,11 @@ Build a Type-Safe Task Manager CLI in TypeScript:
 | Learning Topics | Flexbox, CSS Grid, Responsive design, TailwindCSS, Modern styling patterns                               |
 | Objectives      | Complete Flexbox Froggy and Grid Garden, Build responsive FreshCart template clone with TailwindCSS only |
 
-**Flexbox & Grid**
+#### Flexbox & Grid
 1. Complete all levels at [Flexbox Froggy](https://flexboxfroggy.com/)
 2. Complete all levels at [Grid Garden](https://codepip.com/games/grid-garden/)
 
-**TailwindCSS**
+#### TailwindCSS
 
 1. Read [TailwindCSS Documentation](https://tailwindcss.com/docs)
 2. Set up TailwindCSS in a project
@@ -282,7 +304,7 @@ Build a Type-Safe Task Manager CLI in TypeScript:
    - Colors & Typography
    - Flexbox & Grid utilities
 
-### Assignment
+#### Assignment
 
 Build [FreshCart Site](https://freshcart-template.codescandy.com/):
 - [ ] Build fully responsive design
@@ -298,7 +320,7 @@ Build [FreshCart Site](https://freshcart-template.codescandy.com/):
 | Learning Topics | AI prompt engineering, IDE AI integration, Vite build system, Modern development workflow with AI          |
 | Objectives      | Master AI-assisted development, Set up Google Gemini in IDE, Build AI-enhanced BudgetY app with TypeScript |
 
-**AI Prompt Engineering (Days 1-3)**
+#### AI Prompt Engineering (Days 1-3)
 
 1. Complete [Anthropic Prompt Engineering Tutorial](https://github.com/anthropics/prompt-eng-interactive-tutorial)
 2. Learn key concepts:
@@ -308,7 +330,7 @@ Build [FreshCart Site](https://freshcart-template.codescandy.com/):
    - Chain-of-thought reasoning
    - Common pitfalls and best practices
 
-**IDE AI Integration (Days 4-5)**
+#### IDE AI Integration (Days 4-5)
 
 1. **Set up Google Gemini in VS Code/Cursor**
    ```bash
@@ -329,7 +351,7 @@ Build [FreshCart Site](https://freshcart-template.codescandy.com/):
    - Documentation generation
    - Test case generation
 
-**Build Tools with Vite (Days 6-7)**
+#### Build Tools with Vite (Days 6-7)
 1. Read [Vite Documentation](https://vitejs.dev/guide/)
 2. Learn about:
    - Project scaffolding
@@ -338,38 +360,13 @@ Build [FreshCart Site](https://freshcart-template.codescandy.com/):
    - Environment variables
    - Plugin ecosystem
 
-**AI-Powered Development Practices**
-```typescript
+#### AI-Powered Development Practices
+```áh
 // Example: Using AI to generate TypeScript interfaces
 // Prompt: "Generate TypeScript interfaces for a budget tracking app with transactions, categories, and monthly summaries"
-
-interface Transaction {
-  id: string;
-  amount: number;
-  category: Category;
-  description: string;
-  date: Date;
-  type: 'income' | 'expense';
-}
-
-interface Category {
-  id: string;
-  name: string;
-  icon: string;
-  color: string;
-  budget?: number;
-}
-
-interface MonthlySummary {
-  month: string;
-  year: number;
-  totalIncome: number;
-  totalExpenses: number;
-  categoryBreakdown: Map<string, number>;
-}
 ```
 
-### Assignment
+#### Assignment
 
 Build AI-Enhanced [BudgetY App](https://hta218.github.io/budget-y/) with:
 - [ ] Set up project with Vite + TypeScript + TailwindCSS
@@ -390,13 +387,13 @@ Build AI-Enhanced [BudgetY App](https://hta218.github.io/budget-y/) with:
 | Learning Topics | Node.js ecosystem, Express.js, REST APIs, Database design, Prisma ORM                                 |
 | Objectives      | Build complete Blog API with authentication, Implement CRUD operations, Create database relationships |
 
-**Node.js Fundamentals**
+#### Node.js Fundamentals
 - Node.js basics and modules
 - NPM package management
 - File system operations
 - Environment variables
 
-**Express.js**
+#### Express.js
 1. Read [Express Getting Started](https://expressjs.com/en/starter/installing.html)
 2. Build a simple API:
    ```javascript
@@ -413,7 +410,7 @@ Build AI-Enhanced [BudgetY App](https://hta218.github.io/budget-y/) with:
    app.listen(3000);
    ```
 
-**Database & Prisma**
+#### Database & Prisma
 
 1. Register a free Database hosting service (Supabase, Railway, etc.)
 1. Follow [Prisma Getting Started](https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgresql)
@@ -422,7 +419,7 @@ Build AI-Enhanced [BudgetY App](https://hta218.github.io/budget-y/) with:
    - Migrations
    - CRUD operations
 
-### Assignment
+#### Assignment
 
 Complete Blog API Project:
 - [ ] Set up Node.js project with Express and TypeScript
@@ -433,7 +430,7 @@ Complete Blog API Project:
 - [ ] Add categories and tags functionality
 - [ ] Deploy to production
 
-**Testing Your API:**
+#### Testing Your API:
 
 Since this is an API-only project, you'll need a REST API client to test your endpoints. Install one of these tools:
 
@@ -442,7 +439,7 @@ Since this is an API-only project, you'll need a REST API client to test your en
    - Create collections for your API endpoints
    - Save example requests for documentation
 
-**Required Endpoints:**
+#### Required Endpoints:
 ```
 POST   /api/auth/register
 POST   /api/auth/login
@@ -453,7 +450,7 @@ PUT    /api/posts/:id
 DELETE /api/posts/:id
 ```
 
-**Database Schema:**
+#### Database Schema:
 ```prisma
 model User {
   id        String   @id @default(cuid())
@@ -497,7 +494,7 @@ model Comment {
 | Learning Topics | React components, Hooks, State management with Preact Signals, ShadcnUI components, TypeScript integration, Deployment |
 | Objectives      | Master React fundamentals, Build complete Blog frontend with modern UI components, Deploy to production                |
 
-**React Basics**
+#### React Basics
 
 1. Read [React Documentation](https://react.dev/learn)
 2. Complete [official tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
@@ -510,7 +507,7 @@ model Comment {
    - Custom hooks
    - Rules of hooks
 
-**Modern UI with ShadcnUI**
+#### Modern UI with ShadcnUI
 
 1. Set up ShadcnUI in your project:
    ```bash
@@ -524,7 +521,7 @@ model Comment {
 3. Learn component customization with TailwindCSS
 4. Understand the copy-paste component philosophy
 
-**State Management with Preact Signals**
+#### State Management with Preact Signals
 
 1. Install Preact Signals:
    ```bash
@@ -549,10 +546,10 @@ model Comment {
    - Effects and subscriptions
    - No providers needed!
 
-### Assignment
+#### Assignment
 
 Complete Blog Platform with Modern Stack:
-- [ ] Set up React project with TypeScript, TailwindCSS, and ShadcnUI
+- [ ] Set up React project with TypeScript, Preact Signals, TailwindCSS, and ShadcnUI
 - [ ] Use ShadcnUI components for:
   - Form inputs and validation
   - Cards for post display
@@ -582,7 +579,7 @@ Complete Blog Platform with Modern Stack:
 | Learning Topics | Schema validation with Zod, Authentication & Authorization, Security best practices, React Router        |
 | Objectives      | Implement secure authentication system, Add comprehensive validation, Build advanced e-commerce features |
 
-**Zod Schema Validation**
+#### Zod Schema Validation
 1. Read [Zod Documentation](https://zod.dev)
 2. Implement validation patterns:
    ```typescript
@@ -609,7 +606,7 @@ Complete Blog Platform with Modern Stack:
    });
    ```
 
-**React Router Advanced Patterns**
+#### React Router Advanced Patterns
 1. Get to know React Router:
    - What it is and why it's used
    - Basic routing concepts
@@ -618,7 +615,7 @@ Complete Blog Platform with Modern Stack:
 2. Read [React Router Documentation](https://reactrouter.com/en/main/start/overview)
 3. Complete [React Router Tutorial](https://reactrouter.com/en/main/start/tutorial)
 
-### Assignment
+#### Assignment
 
 Build a Full-Featured Online Store with React Router:
 - [ ] Set up project with React, TypeScript, React Router, and TailwindCSS
@@ -665,7 +662,7 @@ Build a Full-Featured Online Store with React Router:
 | Learning Topics | Shopify ecosystem, Partner account, Admin APIs, Hydrogen framework, Headless commerce                  |
 | Objectives      | Set up Shopify development environment, Build custom Hydrogen storefront, Implement cart functionality |
 
-**Shopify Basics**
+#### Shopify Basics
 1. Create a partner account
 2. Set up development store
 3. Explore admin interface
@@ -674,7 +671,7 @@ Build a Full-Featured Online Store with React Router:
    - Orders and customers
    - Themes and apps
 
-### Assignment 1: Shopify Store Setup
+#### Assignment 1: Shopify Store Setup
 
 Build a complete Shopify store using the admin interface:
 - [ ] Create a Shopify Partner account at [partners.shopify.com](https://partners.shopify.com)
@@ -703,16 +700,16 @@ Build a complete Shopify store using the admin interface:
   - Add language selector if applicable
 - [ ] Test the complete customer journey from browsing to checkout
 
-**Shopify Hydrogen Development**
+#### Shopify Hydrogen Development
 
-**Hydrogen Setup**
+#### Hydrogen Setup
 1. Read [Hydrogen Documentation](https://shopify.dev/docs/custom-storefronts/hydrogen)
 2. Create Hydrogen project:
    ```bash
    npm create @shopify/hydrogen@latest
    ```
 
-### Assignment 2: Hydrogen Storefront Development
+#### Assignment 2: Hydrogen Storefront Development
 
 Build a custom Hydrogen storefront connected to your Shopify store:
 - [ ] Set up Hydrogen project:
@@ -741,7 +738,7 @@ Build a custom Hydrogen storefront connected to your Shopify store:
     - Format publish dates properly
     - Add "Read More" links to full articles
 
-**Example GraphQL Queries for Practice:**
+#### Example GraphQL Queries for Practice:
 ```graphql
 # Query 1: Shop Information
 {
@@ -807,14 +804,14 @@ Build a custom Hydrogen storefront connected to your Shopify store:
 | Learning Topics | Weaverse SDK, Visual components, Component schemas, Final project integration                         |
 | Objectives      | Master Weaverse platform, Create custom visual components, Build complete e-commerce capstone project |
 
-**Weaverse Setup**
+#### Weaverse Setup
 1. Read [Weaverse Documentation](https://weaverse.io/docs)
 2. Set up Weaverse project:
    ```bash
    npm create @weaverse/hydrogen@latest
    ```
 
-**Component Development**
+#### Component Development
 - Create custom sections
 - Define component schemas
 - Implement visual editing
@@ -839,7 +836,7 @@ Build a complete Weaverse Hydrogen theme:
 - [ ] Prepare final presentation
 - [ ] Document future improvements
 
-**Presentation & Review**
+#### Presentation & Review
 - Live demo of project
 - Code walkthrough
 - Technical documentation
