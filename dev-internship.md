@@ -22,11 +22,11 @@
   - [Pre-Program Requirements](#pre-program-requirements)
     - [English for Developers (Self-Study, Recommended)](#english-for-developers-self-study-recommended)
     - [Orientation \& Setup](#orientation--setup)
-  - [Week 1-2: JavaScript](#week-1-2-javascript)
+  - [Week 1-2: JavaScript \& TypeScript](#week-1-2-javascript--typescript)
     - [Assignment](#assignment)
   - [Week 3-4: CSS \& Modern Styling](#week-3-4-css--modern-styling)
     - [Assignment](#assignment-1)
-  - [Week 5-6: TypeScript \& Build Tools](#week-5-6-typescript--build-tools)
+  - [Week 5-6: AI Integration \& Build Tools](#week-5-6-ai-integration--build-tools)
     - [Assignment](#assignment-2)
   - [Week 7-8: Node.js \& Backend Development](#week-7-8-nodejs--backend-development)
     - [Assignment](#assignment-3)
@@ -35,6 +35,8 @@
   - [Week 11-12: Advanced Topics \& Security](#week-11-12-advanced-topics--security)
     - [Assignment](#assignment-5)
   - [Week 13: Shopify Development](#week-13-shopify-development)
+    - [Assignment 1: Shopify Store Setup](#assignment-1-shopify-store-setup)
+    - [Assignment 2: Hydrogen Storefront Development](#assignment-2-hydrogen-storefront-development)
   - [Week 14: Weaverse Integration](#week-14-weaverse-integration)
   - [Week 15-16: Final Project \& Internship Review](#week-15-16-final-project--internship-review)
   - [Graduation](#graduation)
@@ -116,9 +118,9 @@ git config --global user.email "your.email@example.com"
 
 ## Week 1-2: JavaScript & TypeScript
 
-|                 |                                                                                                              |
-| :-------------- | :----------------------------------------------------------------------------------------------------------- |
-| Learning Topics | Core JavaScript, ES6+ features, Functional programming, TypeScript fundamentals, Type-safe development       |
+|                 |                                                                                                             |
+| :-------------- | :---------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Core JavaScript, ES6+ features, Functional programming, TypeScript fundamentals, Type-safe development      |
 | Objectives      | Complete 30 JS exercises, Master TypeScript basics, Build a type-safe CLI task manager with full TypeScript |
 
 **Beginner JavaScript (Skip if already familiar)**
@@ -178,25 +180,78 @@ git config --global user.email "your.email@example.com"
    }
    ```
 
+**Building Command-Line Applications (Days 11-12)**
+
+1. Install Commander.js for CLI development:
+   ```bash
+   npm install commander
+   npm install --save-dev @types/node
+   ```
+
+2. Learn CLI basics:
+   ```typescript
+   // Basic CLI structure with Commander.js
+   import { Command } from 'commander';
+   
+   const program = new Command();
+   
+   program
+     .name('task-manager')
+     .description('CLI task management application')
+     .version('1.0.0');
+   
+   program
+     .command('add <title>')
+     .description('Add a new task')
+     .option('-p, --priority <priority>', 'Set priority (low|medium|high)', 'medium')
+     .action((title, options) => {
+       console.log(`Adding task: ${title} with priority: ${options.priority}`);
+     });
+   
+   program.parse(process.argv);
+   ```
+
+3. Essential CLI concepts:
+   - Parsing command-line arguments
+   - Creating interactive prompts with inquirer
+   - Handling file system operations with fs/promises
+   - Formatting console output with chalk
+   - Creating help documentation
+   - Error handling and user feedback
+
+4. File persistence pattern:
+   ```typescript
+   import { promises as fs } from 'fs';
+   import path from 'path';
+   
+   const DATA_FILE = path.join(process.cwd(), 'tasks.json');
+   
+   async function loadTasks(): Promise<Task[]> {
+     try {
+       const data = await fs.readFile(DATA_FILE, 'utf-8');
+       return JSON.parse(data);
+     } catch (error) {
+       return []; // Return empty array if file doesn't exist
+     }
+   }
+   
+   async function saveTasks(tasks: Task[]): Promise<void> {
+     await fs.writeFile(DATA_FILE, JSON.stringify(tasks, null, 2));
+   }
+   ```
+
 ### Assignment
 
 Build a Type-Safe Task Manager CLI in TypeScript:
 - [ ] Set up TypeScript project with proper tsconfig.json
-- [ ] Define interfaces for Task, User, and Project
+- [ ] Define interfaces for Task
 - [ ] Create type-safe command-line interface using Commander.js
 - [ ] Implement CRUD operations with full type safety:
   - Add tasks with validation
   - Remove tasks by ID
   - Update task status and priority
   - List and filter tasks
-- [ ] Add project management features:
-  - Create projects
-  - Assign tasks to projects
-  - View tasks by project
-- [ ] Implement data persistence with type-safe JSON handling
-- [ ] Add input validation using type guards
-- [ ] Include error handling with custom error types
-- [ ] Write at least 5 unit tests using Jest with TypeScript
+  - Save tasks to JSON file
 
 **Required TypeScript features to demonstrate:**
 - Interfaces and type aliases
@@ -320,29 +375,11 @@ Build AI-Enhanced [BudgetY App](https://hta218.github.io/budget-y/) with:
 - [ ] Set up project with Vite + TypeScript + TailwindCSS
 - [ ] Configure AI assistant in your IDE
 - [ ] Use AI to generate initial TypeScript interfaces and types
-- [ ] Implement features with AI assistance:
+- [ ] Implement features:
   - Transaction CRUD operations
   - Category management
-  - Budget tracking and alerts
-  - Data visualization components
-- [ ] Add AI-powered features:
-  - Smart transaction categorization
-  - Spending insights generation
-  - Budget recommendations
-- [ ] Document AI prompts used for each major feature
-- [ ] Write unit tests (generate test cases with AI)
-- [ ] Create a development journal documenting:
-  - Effective prompts used
-  - Time saved with AI assistance
-  - Challenges and solutions
+  - Budget tracking
 - [ ] Deploy to production
-
-**AI Integration Requirements:**
-- Use AI for at least 50% of code generation
-- Document 10+ effective prompts in markdown file
-- Generate all TypeScript types with AI assistance
-- Create test cases using AI
-- Use AI for code review and optimization
 
 ---
 
@@ -396,6 +433,15 @@ Complete Blog API Project:
 - [ ] Add categories and tags functionality
 - [ ] Deploy to production
 
+**Testing Your API:**
+
+Since this is an API-only project, you'll need a REST API client to test your endpoints. Install one of these tools:
+
+1. **Postman** (Recommended for beginners)
+   - Download from [postman.com](https://www.postman.com/downloads/)
+   - Create collections for your API endpoints
+   - Save example requests for documentation
+
 **Required Endpoints:**
 ```
 POST   /api/auth/register
@@ -446,15 +492,15 @@ model Comment {
 
 ## Week 9-10: React
 
-|                 |                                                                                                                          |
-| :-------------- | :----------------------------------------------------------------------------------------------------------------------- |
+|                 |                                                                                                                        |
+| :-------------- | :--------------------------------------------------------------------------------------------------------------------- |
 | Learning Topics | React components, Hooks, State management with Preact Signals, ShadcnUI components, TypeScript integration, Deployment |
-| Objectives      | Master React fundamentals, Build complete Blog frontend with modern UI components, Deploy to production                  |
+| Objectives      | Master React fundamentals, Build complete Blog frontend with modern UI components, Deploy to production                |
 
 **React Basics**
 
 1. Read [React Documentation](https://react.dev/learn)
-2. Complete official tutorial
+2. Complete [official tutorial](https://react.dev/learn/tutorial-tic-tac-toe)
 3. Learn:
    - Components and Props
    - State and Lifecycle
@@ -522,30 +568,10 @@ Complete Blog Platform with Modern Stack:
 - [ ] Implement user authentication UI
 - [ ] Build post listing and detail views
 - [ ] Add create/edit post functionality
-- [ ] Implement comment system
 - [ ] Add search and filtering features
 - [ ] Connect to backend API with proper error handling
 - [ ] Include form validation with react-hook-form
-- [ ] Deploy to production:
-  - Frontend to Vercel
-  - Backend to Fly.io or Vercel Functions
-  - Configure environment variables
-  - Set up custom domain (optional)
-
-**Deployment Steps:**
-```bash
-# Frontend deployment to Vercel
-npm install -g vercel
-vercel
-# Follow prompts to configure project
-
-# Backend deployment to Fly.io
-curl -L https://fly.io/install.sh | sh
-fly launch
-fly deploy
-# Configure DATABASE_URL and other secrets
-fly secrets set JWT_SECRET=your-secret-here
-```
+- [ ] Deploy to production
 
 ---
 
@@ -583,80 +609,50 @@ fly secrets set JWT_SECRET=your-secret-here
    });
    ```
 
-**Security Best Practices**
-1. **Authentication & Authorization**
-   - JWT implementation with refresh tokens
-   - Role-based access control (RBAC)
-   - Secure password hashing with bcrypt
-   - Session management
-
-2. **API Security**
-   ```typescript
-   // Rate limiting
-   import rateLimit from 'express-rate-limit';
-   
-   const limiter = rateLimit({
-     windowMs: 15 * 60 * 1000, // 15 minutes
-     max: 100 // limit each IP to 100 requests per windowMs
-   });
-   
-   // CORS configuration
-   const corsOptions = {
-     origin: process.env.FRONTEND_URL,
-     credentials: true,
-     optionsSuccessStatus: 200
-   };
-   
-   // Input sanitization
-   app.use(helmet());
-   app.use(mongoSanitize());
-   ```
-
 **React Router Advanced Patterns**
-
-1. Complete [React Router Tutorial](https://reactrouter.com/en/main/start/tutorial)
-2. Learn advanced concepts:
-   - Route guards and middleware
-   - Lazy loading with code splitting
-   - Nested layouts
-   - Programmatic navigation
-   - Route transitions
+1. Get to know React Router:
+   - What it is and why it's used
+   - Basic routing concepts
+   - Dynamic routing with parameters
+   - Nested routes and layouts
+2. Read [React Router Documentation](https://reactrouter.com/en/main/start/overview)
+3. Complete [React Router Tutorial](https://reactrouter.com/en/main/start/tutorial)
 
 ### Assignment
 
-Build a Secure E-commerce Store with Advanced Features:
-- [ ] Implement comprehensive authentication system:
-  - User registration with email verification
-  - Login with JWT tokens
-  - Password reset functionality
-  - Remember me option
-- [ ] Create product catalog with advanced routing:
-  - Category-based routes (`/products/electronics`)
-  - Search with query parameters
-  - Pagination and filtering
-- [ ] Build secure admin dashboard:
-  - Protected routes with role checking
-  - Product CRUD operations
-  - Order management
-  - User management
-- [ ] Add security features:
-  - Rate limiting on API endpoints
-  - Input validation with Zod on all forms
-  - XSS protection
-  - CSRF tokens
-  - Secure headers with Helmet
-- [ ] Implement shopping cart with:
-  - Persistent state (localStorage + backend)
-  - Guest checkout option
-  - Stock validation
-- [ ] Add payment simulation:
-  - Checkout flow with form validation
-  - Order confirmation
-  - Email notifications (mock)
-- [ ] Performance optimizations:
-  - Lazy load routes
-  - Image optimization
-  - API response caching
+Build a Full-Featured Online Store with React Router:
+- [ ] Set up project with React, TypeScript, React Router, and TailwindCSS
+- [ ] Implement complete page structure with proper routing:
+  - **Home page** (`/`) - Hero banner, featured products, categories
+  - **Product listing** (`/products`) - Grid layout with filters
+  - **Category pages** (`/collections/:category`) - Dynamic category routing
+  - **Product detail** (`/products/:id`) - Gallery, variants, reviews
+  - **Shopping cart** (`/cart`) - Cart items, quantity updates, totals
+  - **Checkout** (`/checkout`) - Multi-step form with validation
+  - **Order confirmation** (`/order/:id`) - Order summary and status
+  - **Blog** (`/blog` and `/blog/:slug`) - Blog listing and articles
+  - **About & Contact** pages - Company info and contact form
+- [ ] Implement advanced routing features:
+  - Nested routes for product categories
+  - Breadcrumb navigation based on routes
+  - 404 page for unknown routes
+- [ ] Build reusable components:
+  - Product card with hover effects
+  - Cart drawer/modal
+  - Search with autocomplete
+  - Newsletter signup
+- [ ] Add e-commerce functionality:
+  - Add to cart
+  - Product search and filtering
+  - Recently viewed products
+- [ ] Style with TailwindCSS and ShadcnUI:
+  - Responsive design for all pages
+  - Loading skeletons
+- [ ] Add Zod validation for:
+  - Checkout form fields
+  - Contact form
+  - Newsletter signup
+- [ ] Deploy to production
 
 *Use the AI assistant you set up in Week 5-6 to help with complex implementations.*
 
@@ -678,6 +674,35 @@ Build a Secure E-commerce Store with Advanced Features:
    - Orders and customers
    - Themes and apps
 
+### Assignment 1: Shopify Store Setup
+
+Build a complete Shopify store using the admin interface:
+- [ ] Create a Shopify Partner account at [partners.shopify.com](https://partners.shopify.com)
+- [ ] Set up a development store with your company name
+- [ ] Add content to your store:
+  - Create at least 10 products across 3 collections
+  - Add product descriptions, multiple images, and variants (size/color)
+  - Create 3 blog posts in a "News" blog
+  - Add essential pages: About Us, Contact, Shipping Policy, Privacy Policy
+- [ ] Configure store appearance:
+  - Install and customize a free theme (Dawn recommended)
+  - Upload logo and favicon
+  - Customize theme colors and typography
+- [ ] Set up navigation:
+  - Create main menu with Collections, About, Blog, Contact
+  - Add footer menu with policies and social links
+  - Configure search functionality
+- [ ] Build full pages using theme customizer:
+  - Homepage with hero banner, featured products, testimonials
+  - Collection pages with filters
+  - Product pages with related products
+  - Blog page with categories
+- [ ] Configure internationalization:
+  - Set up at least 2 currencies (USD and your local currency)
+  - Configure 2 markets (domestic and international)
+  - Add language selector if applicable
+- [ ] Test the complete customer journey from browsing to checkout
+
 **Shopify Hydrogen Development**
 
 **Hydrogen Setup**
@@ -687,12 +712,91 @@ Build a Secure E-commerce Store with Advanced Features:
    npm create @shopify/hydrogen@latest
    ```
 
-**Custom Storefront**
-Build features:
-- Product listing
-- Product details
-- Shopping cart
-- Checkout redirect
+### Assignment 2: Hydrogen Storefront Development
+
+Build a custom Hydrogen storefront connected to your Shopify store:
+- [ ] Set up Hydrogen project:
+  - Initialize new Hydrogen app
+  - Connect to your development store using Storefront API
+  - Configure environment variables
+- [ ] Learn [GraphQL Storefront API](https://shopify.dev/docs/api/storefront):
+  - Install [Shopify GraphiQL App](https://shopify-graphiql-app.shopifycloud.com/login)
+  - Complete these query exercises:
+    1. Query shop information (name, description, payment settings)
+    2. Fetch first 10 products with title, price, and images
+    3. Get a specific collection by handle with its products
+    4. Query product variants and inventory levels
+    5. Fetch blog articles with author and publish date
+    6. Create a complex query combining products, collections, and metafields
+    7. Practice pagination with products using cursor-based pagination
+- [ ] Build homepage sections using Storefront API:
+  - **Featured Products Section**:
+    - Query products from a specific collection (e.g., "Featured" or "Best Sellers")
+    - Display product grid with image, title, price
+    - Implement hover effects and quick view
+    - Add "Add to Cart" functionality
+  - **Blog Articles Section**:
+    - Query latest 3 articles from a specific blog
+    - Display article cards with featured image, title, excerpt
+    - Format publish dates properly
+    - Add "Read More" links to full articles
+
+**Example GraphQL Queries for Practice:**
+```graphql
+# Query 1: Shop Information
+{
+  shop {
+    name
+    description
+    primaryDomain {
+      url
+    }
+    paymentSettings {
+      currencyCode
+      supportedDigitalWallets
+    }
+  }
+}
+
+# Query 2: Products with Variants
+{
+  products(first: 10) {
+    edges {
+      node {
+        id
+        title
+        handle
+        priceRange {
+          minVariantPrice {
+            amount
+            currencyCode
+          }
+        }
+        images(first: 1) {
+          edges {
+            node {
+              url
+              altText
+            }
+          }
+        }
+        variants(first: 5) {
+          edges {
+            node {
+              id
+              title
+              price {
+                amount
+              }
+              availableForSale
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
 
 ---
 
