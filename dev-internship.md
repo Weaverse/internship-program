@@ -211,6 +211,17 @@ git config --global user.email "your.email@example.com"
 
 #### Building Command-Line Applications (Days 11-12)
 
+**Prerequisites - Terminal Setup:**
+
+Before building CLI applications, ensure you have a modern terminal environment:
+
+1. **Install Zsh** - Follow the [Zsh installation guide](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+2. **Install Oh My Zsh** - Set up from [ohmyzsh.sh](https://ohmyz.sh/) for enhanced terminal features
+3. **Install zsh-autosuggestions** - Add from [zsh-autosuggestions repository](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md) for intelligent command completion
+4. Configure the plugins in your `~/.zshrc` file and verify your setup is working properly
+
+**CLI Development Setup:**
+
 1. Install Commander.js for CLI development:
    ```bash
    npm install commander
