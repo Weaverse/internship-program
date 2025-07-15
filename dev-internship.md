@@ -365,7 +365,7 @@ Now let's set up a modern, developer-friendly terminal environment:
 **CLI Development Setup:**
 
 1. Try Nodejs built-in prompt:
-   ```js
+  ```js
   import readline from 'node:readline';
 
   const rl = readline.createInterface({
@@ -377,7 +377,7 @@ Now let's set up a modern, developer-friendly terminal environment:
     console.log(`Hi ${name}!`);
     rl.close();
   });
-   ```
+  ```
 
 2. Install Commander.js for CLI development:
    ```bash
