@@ -211,14 +211,155 @@ git config --global user.email "your.email@example.com"
 
 #### Building Command-Line Applications (Days 11-12)
 
-**Prerequisites - Terminal Setup:**
+**Prerequisites - Understanding the Terminal:**
 
-Before building CLI applications, ensure you have a modern terminal environment:
+Before diving into CLI development, it's essential to understand what a terminal is and how to use it effectively:
 
-1. **Install Zsh** - Follow the [Zsh installation guide](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
-2. **Install Oh My Zsh** - Set up from [ohmyzsh.sh](https://ohmyz.sh/) for enhanced terminal features
-3. **Install zsh-autosuggestions** - Add from [zsh-autosuggestions repository](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md) for intelligent command completion
-4. Configure the plugins in your `~/.zshrc` file and verify your setup is working properly
+1. **What is a Terminal?**
+   - A terminal (also called command line or shell) is a text-based interface to interact with your computer
+   - It allows you to run commands, navigate files, and execute programs without a graphical interface
+   - Essential for developers as many tools and scripts are designed for terminal use
+
+2. **Basic Terminal Commands to Practice:**
+   
+   **For macOS/Linux (bash/zsh):**
+   ```bash
+   # Navigation
+   pwd          # Print working directory (where you are)
+   ls           # List files in current directory
+   ls -la       # List all files with details
+   cd folder    # Change directory to 'folder'
+   cd ..        # Go up one directory
+   cd ~         # Go to home directory
+   
+   # File Operations
+   mkdir mydir  # Create a new directory
+   touch file.txt   # Create an empty file
+   cp file1 file2   # Copy file1 to file2
+   mv file1 file2   # Move/rename file1 to file2
+   rm file.txt      # Remove a file (use carefully!)
+   cat file.txt     # Display file contents
+   
+   # Useful Commands
+   clear        # Clear the terminal screen
+   history      # Show command history
+   echo "text"  # Print text to terminal
+   which node   # Find where a program is installed
+   ```
+   
+   **For Windows (Command Prompt/PowerShell):**
+   ```powershell
+   # Navigation
+   pwd          # Print working directory (PowerShell) or use 'cd' (CMD)
+   dir          # List files in current directory (or 'ls' in PowerShell)
+   cd folder    # Change directory to 'folder'
+   cd ..        # Go up one directory
+   cd %USERPROFILE%  # Go to home directory (CMD) or cd ~ (PowerShell)
+   
+   # File Operations
+   mkdir mydir  # Create a new directory
+   type nul > file.txt   # Create empty file (CMD) or New-Item file.txt (PowerShell)
+   copy file1 file2      # Copy file1 to file2
+   move file1 file2      # Move/rename file1 to file2
+   del file.txt          # Remove a file (use carefully!)
+   type file.txt         # Display file contents (or 'cat' in PowerShell)
+   
+   # Useful Commands
+   cls          # Clear the terminal screen
+   doskey /h    # Show command history (CMD) or history (PowerShell)
+   echo "text"  # Print text to terminal
+   where node   # Find where a program is installed
+   ```
+
+3. **Practice Exercise:**
+   - Open your terminal
+   - Navigate to your home directory
+   - Create a new directory called "cli-practice"
+   - Create a file called "hello.txt" with some content
+   - List the contents of the directory
+   - Remove the file and directory
+
+**Terminal Setup:**
+
+Now let's set up a modern, developer-friendly terminal environment:
+
+**Note for Windows Users:** While the instructions below focus on Zsh and Oh My Zsh (primarily for macOS/Linux), Windows users should:
+- Install [WSL2 (Windows Subsystem for Linux)](https://learn.microsoft.com/en-us/windows/wsl/install) to run Linux commands natively
+- After installing WSL2, you can follow the Zsh instructions below within your Linux environment
+- Alternatively, use [Git Bash](https://git-scm.com/downloads) which provides Unix-like commands on Windows
+
+1. **What is Zsh?**
+   - Zsh (Z shell) is an extended version of the Bash shell with many improvements
+   - More powerful auto-completion, better scripting capabilities, and enhanced customization
+   - Default shell on macOS since Catalina, available on all platforms
+   - Why prefer Zsh over Bash:
+     - Smart tab completion (case-insensitive, partial matching)
+     - Powerful globbing and pattern matching
+     - Better command history search
+     - Extensive theming and plugin ecosystem
+
+2. **Install Zsh** (if not already installed):
+   ```bash
+   # Check if Zsh is installed
+   zsh --version
+   
+   # Install on macOS (usually pre-installed)
+   brew install zsh
+   
+   # Install on Ubuntu/Debian
+   sudo apt update && sudo apt install zsh
+   
+   # Set Zsh as default shell
+   chsh -s $(which zsh)
+   ```
+3. **What is Oh My Zsh?**
+   - Oh My Zsh is a framework for managing Zsh configuration
+   - Provides themes, plugins, and an auto-update tool
+   - Makes Zsh easier to customize and extend
+   - **The key difference**: Zsh is the shell itself, Oh My Zsh is a configuration framework that runs on top of Zsh
+
+4. **Install Oh My Zsh**:
+   ```bash
+   # Install via curl
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   
+   # Or via wget
+   sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   ```
+5. **Essential Oh My Zsh Plugins**:
+   ```bash
+   # Install zsh-autosuggestions for intelligent command completion
+   git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+   
+   # Install zsh-syntax-highlighting for command highlighting
+   git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+   ```
+
+6. **Configure Oh My Zsh**:
+   Edit your `~/.zshrc` file:
+   ```bash
+   # Open the configuration file
+   nano ~/.zshrc
+   
+   # Find the plugins line and update it to:
+   plugins=(git zsh-autosuggestions zsh-syntax-highlighting node npm)
+   
+   # Optional: Change theme (default is robbyrussell)
+   ZSH_THEME="agnoster"  # Or try "powerlevel10k/powerlevel10k"
+   
+   # Save and reload configuration
+   source ~/.zshrc
+   ```
+
+7. **Verify Your Setup**:
+   ```bash
+   # Check shell
+   echo $SHELL  # Should show /bin/zsh or similar
+   
+   # Test auto-suggestions (type a command you used before)
+   # Test syntax highlighting (commands should be colored)
+   # Test git plugin (type 'git' and press TAB)
+   ```
 
 **CLI Development Setup:**
 
