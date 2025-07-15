@@ -364,13 +364,28 @@ Now let's set up a modern, developer-friendly terminal environment:
 
 **CLI Development Setup:**
 
-1. Install Commander.js for CLI development:
+1. Try Nodejs built-in prompt:
+   ```js
+  import readline from 'node:readline';
+
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
+
+  rl.question(`What's your name? `, name => {
+    console.log(`Hi ${name}!`);
+    rl.close();
+  });
+   ```
+
+2. Install Commander.js for CLI development:
    ```bash
    npm install commander
    npm install --save-dev @types/node
    ```
 
-2. Learn CLI basics:
+3. Learn CLI basics:
    ```typescript
    // Basic CLI structure with Commander.js
    import { Command } from 'commander';
@@ -393,7 +408,7 @@ Now let's set up a modern, developer-friendly terminal environment:
    program.parse(process.argv);
    ```
 
-3. Essential CLI concepts:
+4. Essential CLI concepts:
    - Parsing command-line arguments
    - Creating interactive prompts with inquirer
    - Handling file system operations with fs/promises
@@ -401,7 +416,7 @@ Now let's set up a modern, developer-friendly terminal environment:
    - Creating help documentation
    - Error handling and user feedback
 
-4. File persistence pattern:
+5. File persistence pattern:
    ```typescript
    import { promises as fs } from 'fs';
    import path from 'path';
