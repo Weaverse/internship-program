@@ -31,20 +31,21 @@
       - [Assignment](#assignment)
   - [Week 3-4: DOM, CSS \& Modern Styling](#week-3-4-dom-css--modern-styling)
       - [DOM Fundamentals (Days 1-4)](#dom-fundamentals-days-1-4)
+      - [Assignment 1: DOM Manipulation](#assignment-1-dom-manipulation)
       - [Flexbox \& Grid](#flexbox--grid)
       - [TailwindCSS](#tailwindcss)
-      - [Assignment](#assignment-1)
+      - [Assignment 2: FreshCart Site](#assignment-2-freshcart-site)
   - [Week 5-6: AI Integration \& Build Tools](#week-5-6-ai-integration--build-tools)
       - [AI Prompt Engineering (Days 1-3)](#ai-prompt-engineering-days-1-3)
       - [IDE AI Integration (Days 4-5)](#ide-ai-integration-days-4-5)
       - [Build Tools with Vite (Days 6-7)](#build-tools-with-vite-days-6-7)
       - [AI-Powered Development Practices](#ai-powered-development-practices)
-      - [Assignment](#assignment-2)
+      - [Assignment](#assignment-1)
   - [Week 7-8: Node.js \& Backend Development](#week-7-8-nodejs--backend-development)
       - [Node.js Fundamentals](#nodejs-fundamentals)
       - [Express.js](#expressjs)
       - [Database \& Prisma](#database--prisma)
-      - [Assignment](#assignment-3)
+      - [Assignment](#assignment-2)
       - [Testing Your API:](#testing-your-api)
       - [Required Endpoints:](#required-endpoints)
       - [Database Schema:](#database-schema)
@@ -52,11 +53,11 @@
       - [React Basics](#react-basics)
       - [Modern UI with ShadcnUI](#modern-ui-with-shadcnui)
       - [State Management with Preact Signals](#state-management-with-preact-signals)
-      - [Assignment](#assignment-4)
+      - [Assignment](#assignment-3)
   - [Week 11-12: Advanced Topics \& Security](#week-11-12-advanced-topics--security)
       - [Zod Schema Validation](#zod-schema-validation)
       - [React Router Advanced Patterns](#react-router-advanced-patterns)
-      - [Assignment](#assignment-5)
+      - [Assignment](#assignment-4)
   - [Week 13: Shopify Development](#week-13-shopify-development)
       - [Shopify Basics](#shopify-basics)
       - [Assignment 1: Shopify Store Setup](#assignment-1-shopify-store-setup)
@@ -542,6 +543,19 @@ Build a Type-Safe Task Manager CLI in TypeScript:
    })
    ```
 
+#### Assignment 1: DOM Manipulation
+
+Build an Interactive Todo List using vanilla JavaScript (no CSS needed):
+
+- [ ] Add new todos with input field and button
+- [ ] Mark todos as complete (strike-through styling)
+- [ ] Delete todos with confirmation
+- [ ] Filter todos (all, active, completed)
+- [ ] Save todos to localStorage
+- [ ] Count of remaining todos
+- [ ] Deploy to GitHub Pages
+
+
 #### Flexbox & Grid
 1. Complete all levels at [Flexbox Froggy](https://flexboxfroggy.com/)
 2. Complete all levels at [Grid Garden](https://codepip.com/games/grid-garden/)
@@ -555,22 +569,7 @@ Build a Type-Safe Task Manager CLI in TypeScript:
    - Colors & Typography
    - Flexbox & Grid utilities
 
-#### Assignment
-
-**Part 1: DOM Manipulation Exercises (Days 5-7)**
-
-Build these interactive components using vanilla JavaScript (no CSS needed):
-
-1. **Interactive Todo List**
-   - [ ] Add new todos with input field and button
-   - [ ] Mark todos as complete (strike-through styling)
-   - [ ] Delete todos with confirmation
-   - [ ] Filter todos (all, active, completed)
-   - [ ] Save todos to localStorage
-   - [ ] Count of remaining todos
-   - [ ] Deploy to GitHub Pages
-
-**Part 2: FreshCart Site Clone (Days 8-14)**
+#### Assignment 2: FreshCart Site
 
 Build [FreshCart Site](https://freshcart-template.codescandy.com/) with interactivity:
 - [ ] Build fully responsive design with TailwindCSS
