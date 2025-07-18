@@ -562,7 +562,7 @@ Build an Interactive Todo List using vanilla JavaScript (no CSS needed):
 
 #### TailwindCSS
 
-1. Read [TailwindCSS Documentation](https://tailwindcss.com/docs)
+1. Learn [TailwindCSS](https://tailwindcss.com/docs). (Read throughh all **Core Concepts** to understand the framework)
 2. Set up TailwindCSS in a project
 3. Learn utility classes:
    - Layout & Spacing
