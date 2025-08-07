@@ -790,7 +790,7 @@ Build AI-Enhanced [BudgetY App](https://hta218.github.io/budget-y/) with:
    - Save example requests for each endpoint
    - Test edge cases and error handling
 
-3. **Update to RESTful Standards**
+3. **Update to [RESTful Standards](https://restfulapi.net/)**
    - [ ] Follow RESTful naming conventions:
      - GET /api/users (list all users)
      - GET /api/users/:id (get single user)
