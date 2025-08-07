@@ -748,8 +748,8 @@ Build AI-Enhanced [BudgetY App](https://hta218.github.io/budget-y/) with:
    ```javascript
    // CREATE - Insert data
    app.post('/api/users', (req, res) => {
-     const { name, email } = req.body;
-     const query = 'INSERT INTO users (name, email) VALUES (?, ?)';
+    const { name, email } = req.query;
+    const query = 'INSERT INTO users (name, email) VALUES (?, ?)';
      
      connection.execute(query, [name, email], (err, results) => {
        if (err) return res.status(500).json({ error: err.message });
