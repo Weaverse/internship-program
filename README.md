@@ -6,7 +6,9 @@ Here, you'll find details about our internship process, expectations, onboarding
 ## Contents
 
 - [Overview](#overview)
-- [Developer Internship Program](dev-internship.md)
+- Programs
+  - [Developer Internship Program](dev-internship.md)
+  - Designer Internship Program *(Coming Soon)*
 - [How to Apply](#how-to-apply)
 - [Contact](#contact)
 
