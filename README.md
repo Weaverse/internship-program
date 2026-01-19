@@ -5,12 +5,13 @@ Here, you'll find details about our internship process, expectations, onboarding
 
 ## Contents
 
-- [Weaverse Internship Program Documentation](#weaverse-internship-program-documentation)
-  - [Contents](#contents)
-  - [Overview](#overview)
-  - [Job Description](#job-description)
-  - [How To Apply](#how-to-apply)
-  - [Contact](#contact)
+- [Overview](#overview)
+- [Job Description](#job-description)
+- Programs
+  - [Developer Internship Program](dev-internship.md)
+  - Designer Internship Program *(Coming Soon)*
+- [How to Apply](#how-to-apply)
+- [Contact](#contact)
 
 ## Overview
 
@@ -19,11 +20,6 @@ The Weaverse Internship Program is designed to give students and early-career pr
 ## Job Description
 
 Join our team as a **Developer Intern** and dive into modern full-stack development with a focus on Shopify e-commerce. You'll learn cutting-edge technologies including React, TypeScript, Node.js, and MySQL while building real products on the Shopify platform.
-
-**What we offer:**
-- Free lunch & transportation support
-- Access to company resources and tools
-- Endless mentorship and education from our experienced team
 
 [View Full Job Description](job-description.md)
 

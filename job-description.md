@@ -8,13 +8,27 @@ Weaverse is a cutting-edge platform that empowers Shopify merchants to build stu
 
 ## Position Overview
 
-| | |
-|---|---|
-| **Position** | Developer Intern |
-| **Duration** | 12-16 weeks (3-4 months) |
-| **Commitment** | 30-36 hours per week |
-| **Type** | Hybrid (on-site & remote) |
-| **Platform** | Shopify E-commerce |
+|                |                           |
+| -------------- | ------------------------- |
+| **Position**   | Developer Intern          |
+| **Duration**   | 12-16 weeks (3-4 months)  |
+| **Commitment** | 30-36 hours per week      |
+| **Type**       | Hybrid (on-site & remote) |
+| **Platform**   | Shopify E-commerce        |
+
+---
+
+## What You'll Do
+
+**After** completing the internship, you'll work as a full-stack developer:
+
+- Build and customize Shopify themes and storefronts using Hydrogen & Weaverse
+- Create React components and UI sections for our visual page builder
+- Design and build backend APIs with Node.js and PostgreSQL
+- Write TypeScript code that's clean and easy to maintain
+- Debug issues, fix bugs, and improve app performance
+- Review teammates' code and participate in technical discussions
+- Work directly with real merchants and see your code used in production
 
 ---
 
@@ -63,14 +77,14 @@ Throughout this internship, you'll gain hands-on experience with modern web deve
 
 ## Benefits
 
-| Benefit | Description |
-|---------|-------------|
-| **Free Lunch** | Daily meals provided during on-site days |
-| **Transportation Support** | Transportation fee coverage for commuting |
-| **Company Resources** | Access to development tools, software licenses, and learning platforms |
-| **Mentorship** | Endless education and guidance from experienced team members |
-| **Real Projects** | Work on actual products used by merchants worldwide |
-| **Career Growth** | Potential for full-time position upon successful completion |
+| Benefit                    | Description                                                            |
+| -------------------------- | ---------------------------------------------------------------------- |
+| **Free Lunch**             | Daily meals provided during on-site days                               |
+| **Transportation Support** | Transportation fee coverage for commuting                              |
+| **Company Resources**      | Access to development tools, software licenses, and learning platforms |
+| **Mentorship**             | Endless education and guidance from experienced team members           |
+| **Real Projects**          | Work on actual products used by merchants worldwide                    |
+| **Career Growth**          | Potential for full-time position upon successful completion            |
 
 ---
 
