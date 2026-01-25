@@ -3,25 +3,15 @@
 Welcome to the official documentation repository for the Weaverse Internship Program!  
 Here, you'll find details about our internship process, expectations, onboarding, and how to apply.
 
-## Contents
-
-- [Overview](#overview)
-- [Job Description](#job-description)
-- Programs
-  - [Developer Internship Program](dev-internship/)
-  - Designer Internship Program *(Coming Soon)*
-- [How to Apply](#how-to-apply)
-- [Contact](#contact)
-
 ## Overview
 
-The Weaverse Internship Program is designed to give students and early-career professionals hands-on experience in a collaborative, innovative environment. Our mission is to help you grow your skills, gain real-world experience, and contribute to impactful projects.
+The Weaverse Internship Program is designed to give college students and early-career professionals hands-on experience in a collaborative, innovative environment. Our mission is to help you grow your skills, gain real-world experience, and contribute to impactful projects.
 
-## Job Description
+## Programs
 
-Join our team as a **Developer Intern** and dive into modern full-stack development with a focus on Shopify e-commerce. You'll learn cutting-edge technologies including React, TypeScript, Node.js, and MySQL while building real products on the Shopify platform.
-
-[View Full Job Description](dev-internship/job-description.md)
+- [Developer Internship Program](dev-internship/)
+- Designer Internship Program *(Coming Soon)*
+- Marketing Internship Program *(Coming Soon)*
 
 ## How To Apply
 
@@ -37,3 +27,10 @@ We look forward to hearing from you!
 ## Contact
 
 For questions or more information, please email us at support@weaverse.io
+
+## Follow Us
+
+- [LinkedIn](https://www.linkedin.com/company/weaverseio)
+- [X (Twitter)](https://x.com/weaverseio)
+- [Facebook](https://www.facebook.com/weaverse)
+- [YouTube](https://www.youtube.com/@weaverse)
