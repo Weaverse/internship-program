@@ -15,8 +15,19 @@ This is the **Weaverse Internship Program Documentation** repository - a compreh
 
 ```
 internship-program/
-├── README.md           # Main repository overview and application process
-└── dev-internship.md   # Complete 16-week developer curriculum
+├── README.md                # Main repository overview and application process
+└── dev-internship/          # Developer Internship Program
+    ├── README.md            # Program overview and curriculum index
+    ├── job-description.md   # Developer Intern job description
+    ├── week-01-02-javascript-typescript.md
+    ├── week-03-04-dom-css-styling.md
+    ├── week-05-06-ai-build-tools.md
+    ├── week-07-08-nodejs-backend.md
+    ├── week-09-10-react.md
+    ├── week-11-12-advanced-security.md
+    ├── week-13-shopify.md
+    ├── week-14-weaverse.md
+    └── week-15-16-final-project.md
 ```
 
 ## Key Information
