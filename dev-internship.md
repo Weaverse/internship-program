@@ -15,7 +15,8 @@
 > your programming skills through hands-on practice. AI assistants can help explain
 > concepts or debug issues, but writing the code yourself is essential for learning.
 
-## Table of Contents
+<details>
+<summary><h2>Table of Contents</h2></summary>
 
 - [Weaverse Developer Internship Program](#weaverse-developer-internship-program)
   - [Table of Contents](#table-of-contents)
@@ -81,6 +82,8 @@
   - [Week 15-16: Final Project \& Internship Review](#week-15-16-final-project--internship-review)
       - [Presentation \& Review](#presentation--review)
   - [Graduation](#graduation)
+
+</details>
 
 ---
 
