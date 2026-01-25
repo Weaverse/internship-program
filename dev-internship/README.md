@@ -17,6 +17,14 @@
 
 ---
 
+## Job Description
+
+Join our team as a **Developer Intern** and dive into modern full-stack development with a focus on Shopify e-commerce. You'll learn cutting-edge technologies including React, TypeScript, Node.js, and MySQL while building real products on the Shopify platform.
+
+[View Full Job Description →](./job-description.md)
+
+---
+
 ## Overview
 
 ### Structure
@@ -36,11 +44,7 @@ By completing this program, interns will:
 - Deploy applications to production environments
 - Specialize in Shopify and Weaverse development
 
----
-
-## Technology Stack
-
-### Core Technologies
+### Technology Stack
 
 | Category        | Technologies                | Purpose                    |
 | --------------- | --------------------------- | -------------------------- |
@@ -103,25 +107,6 @@ git config --global user.email "your.email@example.com"
 | 13 | [Shopify Development](./week-13-shopify.md) | Shopify ecosystem, Partner account, Hydrogen framework |
 | 14 | [Weaverse Integration](./week-14-weaverse.md) | Weaverse SDK, Visual components, Component schemas |
 | 15-16 | [Final Project & Review](./week-15-16-final-project.md) | Capstone project, Presentation, Graduation |
-
----
-
-## Quick Links
-
-### Foundation
-- [Week 1-2: JavaScript & TypeScript](./week-01-02-javascript-typescript.md)
-- [Week 3-4: DOM, CSS & Modern Styling](./week-03-04-dom-css-styling.md)
-
-### Development Skills
-- [Week 5-6: AI Integration & Build Tools](./week-05-06-ai-build-tools.md)
-- [Week 7-8: Node.js & Backend Development](./week-07-08-nodejs-backend.md)
-- [Week 9-10: React](./week-09-10-react.md)
-- [Week 11-12: Advanced Topics & Security](./week-11-12-advanced-security.md)
-
-### E-commerce Specialization
-- [Week 13: Shopify Development](./week-13-shopify.md)
-- [Week 14: Weaverse Integration](./week-14-weaverse.md)
-- [Week 15-16: Final Project & Internship Review](./week-15-16-final-project.md)
 
 ---
 
