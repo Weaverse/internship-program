@@ -1,5 +1,12 @@
 # Week 1-2: JavaScript & TypeScript
 
+> [!IMPORTANT]
+> **DO NOT** use AI tools to write code for you. You come here to **LEARN**, the goal of this program is to build
+> your programming skills through **hands-on** practice. AI assistants can help explain
+> concepts or debug issues, but writing the code yourself is **essential** for learning.
+
+---
+
 |                 |                                                                                                             |
 | :-------------- | :---------------------------------------------------------------------------------------------------------- |
 | Learning Topics | Core JavaScript, ES6+ features, Functional programming, TypeScript fundamentals, Type-safe development      |
@@ -9,8 +16,8 @@
 1. Complete [JavaScript Beginner Tutorial](https://www.w3schools.com/js/default.asp)
 
 ## Core JavaScript (Days 1-3)
-1. Register an account on [Exercism](https://exercism.org/tracks/javascript)
-2. Complete the following exercises:
+1. Register an account on [Exercism](https://exercism.org)
+2. Complete the [Javascript Track](https://exercism.org/tracks/javascript) exercises:
    - **15 Easy exercises** - Start with basics and build confidence
    - **10 Medium exercises** - Apply concepts in more complex scenarios
    - **5 Hard exercises** - Challenge yourself with advanced problems

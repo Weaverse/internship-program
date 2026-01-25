@@ -1,5 +1,12 @@
 # Week 11-12: Advanced Topics & Security
 
+> [!IMPORTANT]
+> **DO NOT** use AI tools to write code for you. You come here to **LEARN**, the goal of this program is to build
+> your programming skills through **hands-on** practice. AI assistants can help explain
+> concepts or debug issues, but writing the code yourself is **essential** for learning.
+
+---
+
 |                 |                                                                                                          |
 | :-------------- | :------------------------------------------------------------------------------------------------------- |
 | Learning Topics | Schema validation with Zod, Authentication & Authorization, Security best practices, React Router        |

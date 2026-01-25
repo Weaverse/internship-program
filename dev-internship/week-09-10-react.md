@@ -1,5 +1,12 @@
 # Week 9-10: React
 
+> [!IMPORTANT]
+> **DO NOT** use AI tools to write code for you. You come here to **LEARN**, the goal of this program is to build
+> your programming skills through **hands-on** practice. AI assistants can help explain
+> concepts or debug issues, but writing the code yourself is **essential** for learning.
+
+---
+
 |                 |                                                                                                                        |
 | :-------------- | :--------------------------------------------------------------------------------------------------------------------- |
 | Learning Topics | React components, Hooks, State management with Preact Signals, ShadcnUI components, TypeScript integration, Deployment |
