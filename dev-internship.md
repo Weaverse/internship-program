@@ -10,6 +10,11 @@
 
 ---
 
+> [!IMPORTANT]
+> Do not use AI tools to write code for you. The goal of this program is to build
+> your programming skills through hands-on practice. AI assistants can help explain
+> concepts or debug issues, but writing the code yourself is essential for learning.
+
 ## Table of Contents
 
 - [Weaverse Developer Internship Program](#weaverse-developer-internship-program)
