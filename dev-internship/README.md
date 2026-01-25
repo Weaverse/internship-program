@@ -67,11 +67,10 @@ Before starting the official program, we recommend completing:
    - Understand our mission and products
 
 2. **Development Environment Setup**
-   - Install [Brave Browser](https://brave.com/) or Chrome
-   - Set up [iTerm2](https://iterm2.com/) (macOS) or Windows Terminal
+   - Install [Chrome](https://www.google.com/chrome/) or [Brave Browser](https://brave.com/)
    - Install [Git](https://git-scm.com/) and create [GitHub](https://github.com) account
    - Install [Node.js](https://nodejs.org/) (LTS version)
-   - Choose IDE: [VS Code](https://code.visualstudio.com/) or [Cursor](https://cursor.sh/)
+   - Choose an IDE: [VS Code](https://code.visualstudio.com/), [Cursor](https://cursor.sh/), [Google Antigravity](https://antigravity.google/), or [WebStorm](https://www.jetbrains.com/webstorm/)
 
 **Setup Checklist:**
 ```bash
