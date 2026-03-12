@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to AI coding agents when working with code in this repository.
 
 ## Repository Overview
 
@@ -89,7 +89,7 @@ Since this is a documentation repository:
 4. Keep external resource links current
 5. Use proper Markdown syntax for better readability
 
-## Notes for Claude Code
+## Notes for AI Agents
 
 - This is a **documentation-only repository** - no executable code or tests to run
 - When making edits, preserve the educational structure and flow
