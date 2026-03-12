@@ -9,7 +9,7 @@
 
 |                 |                                                                                                                        |
 | :-------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| Learning Topics | DOM fundamentals, DOM manipulation, Event handling, Flexbox, CSS Grid, Responsive design, TailwindCSS                  |
+| Learning Topics | DOM fundamentals, DOM manipulation, Event handling, CSS fundamentals, Flexbox, CSS Grid, Responsive design, TailwindCSS |
 | Objectives      | Master DOM manipulation, Complete CSS games, Build interactive FreshCart clone with TailwindCSS and vanilla JavaScript |
 
 ## DOM Fundamentals (Days 1-4)
@@ -107,6 +107,24 @@ Build an Interactive Todo List using vanilla JavaScript (no CSS needed):
 - [ ] Count of remaining todos
 - [ ] Deploy to GitHub Pages
 
+
+## CSS Fundamentals (Days 5-7)
+
+> [!NOTE]
+> If you're already familiar with CSS basics, feel free to skip this section and jump straight to Flexbox & Grid.
+
+1. Complete the [W3Schools CSS Tutorial](https://www.w3schools.com/css/default.asp) — covers all the basics from selectors to layout
+2. Key topics to focus on:
+   - Selectors & Specificity
+   - The Box Model (`content`, `padding`, `border`, `margin`, `box-sizing`)
+   - Display & Positioning (`block`, `inline`, `inline-block`, `static`, `relative`, `absolute`, `fixed`, `sticky`)
+   - Colors, Typography & Units (`px`, `em`, `rem`, `%`, `vw`/`vh`)
+   - Responsive design basics (media queries)
+3. Complete all levels at [CSS Diner](https://flukeout.github.io/) — interactive CSS selectors practice
+
+### Additional Resources
+- [web.dev Learn CSS](https://web.dev/learn/css) — structured learning path by Google
+- [MDN CSS First Steps](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps) — in-depth reference
 
 ## Flexbox & Grid
 1. Complete all levels at [Flexbox Froggy](https://flexboxfroggy.com/)
