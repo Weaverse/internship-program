@@ -147,4 +147,4 @@ Build a custom Hydrogen storefront connected to your Shopify store:
 
 ---
 
-[← Back to Overview](./README.md) | [Previous: Week 11-12](./week-11-12-advanced-react.md) | [Next: Week 14 →](./week-14-weaverse.md)
+[← Back to Overview](./README.md) | [Previous: Week 11-12](./week-11-12-react-router.md) | [Next: Week 14 →](./week-14-weaverse.md)

@@ -94,8 +94,8 @@ git config --global user.email "your.email@example.com"
 | 3-4 | [DOM, CSS & Modern Styling](./week-03-04-dom-css-styling.md) | DOM manipulation, Event handling, Flexbox, Grid, TailwindCSS |
 | 5-6 | [Build Tools & Development Workflow](./week-05-06-build-tools.md) | Package managers, Vite build system, Git workflows, Linting, Formatting |
 | 7-8 | [Node.js & Backend Development](./week-07-08-nodejs-backend.md) | Express.js, REST APIs, MySQL, Prisma ORM |
-| 9-10 | [React & GraphQL](./week-09-10-react.md) | React components, Hooks, Data fetching, Preact Signals, ShadcnUI, GraphQL |
-| 11-12 | [Advanced React & Validation](./week-11-12-advanced-react.md) | Zod validation, React Router, Advanced patterns |
+| 9-10 | [React](./week-09-10-react.md) | React components, Hooks, Data fetching, Preact Signals, ShadcnUI |
+| 11-12 | [React Router & GraphQL](./week-11-12-react-router.md) | React Router Framework Mode, GraphQL, Data loading, Actions |
 | 13 | [Shopify Development](./week-13-shopify.md) | Shopify ecosystem, Partner account, Hydrogen framework |
 | 14 | [Weaverse Integration](./week-14-weaverse.md) | Weaverse SDK, Visual components, Component schemas |
 | 15-16 | [Final Project & Review](./week-15-16-final-project.md) | Capstone project, Presentation, Graduation |

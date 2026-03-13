@@ -24,7 +24,7 @@ internship-program/
     ├── week-05-06-build-tools.md
     ├── week-07-08-nodejs-backend.md
     ├── week-09-10-react.md
-    ├── week-11-12-advanced-react.md
+    ├── week-11-12-react-router.md
     ├── week-13-shopify.md
     ├── week-14-weaverse.md
     └── week-15-16-final-project.md
