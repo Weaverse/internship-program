@@ -61,6 +61,22 @@
    - Extracting reusable data fetching hooks
    - Handling API errors gracefully
 
+3. **Connecting to your backend API (cross-origin)**
+
+   Your React app (e.g., `localhost:5173`) and your backend API (e.g., `localhost:5000`) run on different ports. Browsers block these cross-origin requests by default. The simplest solution is Vite's built-in proxy — add this to your Vite config and all `/api` requests will be forwarded to your backend:
+   ```typescript
+   // vite.config.ts
+   export default defineConfig({
+     plugins: [react()],
+     server: {
+       proxy: {
+         '/api': 'http://localhost:5000'
+       }
+     }
+   })
+   ```
+   Now `fetch('/api/posts')` in your React code will automatically proxy to `http://localhost:5000/api/posts` during development — no CORS issues, no backend changes needed.
+
 ## Modern UI with ShadcnUI
 
 1. Set up ShadcnUI in your project:
