@@ -24,7 +24,7 @@ Weaverse is a cutting-edge platform that empowers Shopify merchants to build stu
 
 - Build and customize Shopify themes and storefronts using Hydrogen & Weaverse
 - Create React components and UI sections for our visual page builder
-- Design and build backend APIs with Node.js and PostgreSQL
+- Design and build backend APIs with Node.js and MySQL
 - Write TypeScript code that's clean and easy to maintain
 - Debug issues, fix bugs, and improve app performance
 - Review teammates' code and participate in technical discussions
@@ -44,7 +44,7 @@ Throughout this internship, you'll gain hands-on experience with modern web deve
 
 ### Backend Development
 - **Node.js & Express.js** - Building RESTful APIs and server-side applications
-- **PostgreSQL & Prisma ORM** - Database design and management
+- **MySQL & Prisma ORM** - Database design and management
 - **Zod** - Schema validation and type safety
 
 ### E-commerce Specialization
