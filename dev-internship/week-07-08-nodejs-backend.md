@@ -23,18 +23,19 @@
 ### Express.js
 1. Read [Express Getting Started](https://expressjs.com/en/starter/installing.html)
 2. Build a simple API:
-   ```javascript
+   ```typescript
    // Basic Express setup
-   const express = require('express');
-   const app = express();
+   import express from 'express'
 
-   app.use(express.json());
+   const app = express()
+
+   app.use(express.json())
 
    app.get('/api/health', (req, res) => {
-     res.json({ status: 'OK' });
-   });
+     res.json({ status: 'OK' })
+   })
 
-   app.listen(3000);
+   app.listen(3000)
    ```
 
 ## Part 2: Database with MySQL
@@ -76,11 +77,11 @@
    ```
 
 5. **Connect MySQL with Node.js Express**
-   ```javascript
+   ```typescript
    // Install mysql2 package
    // npm install mysql2
 
-   const mysql = require('mysql2');
+   import mysql from 'mysql2'
 
    // Create connection
    const connection = mysql.createConnection({
@@ -88,23 +89,23 @@
      user: 'root',
      password: 'your_password',
      database: 'blog_db'
-   });
+   })
 
    // Connect to database
    connection.connect((err) => {
      if (err) {
-       console.error('Error connecting to MySQL:', err);
-       return;
+       console.error('Error connecting to MySQL:', err)
+       return
      }
-     console.log('Connected to MySQL database');
-   });
+     console.log('Connected to MySQL database')
+   })
    ```
 
 6. **Learn Basic CRUD Operations**
-   ```javascript
+   ```typescript
    // CREATE - Insert data
    app.post('/api/users', (req, res) => {
-    const { name, email } = req.query;
+    const { name, email } = req.body;
     const query = 'INSERT INTO users (name, email) VALUES (?, ?)';
 
      connection.execute(query, [name, email], (err, results) => {
@@ -248,6 +249,74 @@
      - [Railway](https://railway.app/) - Simple deployment with MySQL/PostgreSQL
      - [Aiven](https://aiven.io/) - Managed cloud databases
    - Update your DATABASE_URL to use the cloud database instead of local
+
+## Part 4: Authentication with JWT
+
+### Understanding JWT Authentication
+1. What is JWT (JSON Web Token) and how it works
+2. Authentication flow: Register → Login → Access protected routes
+3. Read [JWT Introduction](https://jwt.io/introduction)
+
+### Implementation
+```typescript
+import bcrypt from 'bcrypt'
+import jwt from 'jsonwebtoken'
+
+const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key'
+
+// Register - hash password before storing
+app.post('/api/auth/register', async (req, res) => {
+  const { email, password, name } = req.body
+  const hashedPassword = await bcrypt.hash(password, 10)
+
+  const user = await prisma.user.create({
+    data: { email, password: hashedPassword, name }
+  })
+
+  res.status(201).json({ message: 'User registered successfully' })
+})
+
+// Login - verify password and issue token
+app.post('/api/auth/login', async (req, res) => {
+  const { email, password } = req.body
+  const user = await prisma.user.findUnique({ where: { email } })
+
+  if (!user || !(await bcrypt.compare(password, user.password))) {
+    return res.status(401).json({ error: 'Invalid credentials' })
+  }
+
+  const token = jwt.sign({ userId: user.id }, JWT_SECRET, { expiresIn: '7d' })
+  res.json({ token })
+})
+
+// Auth middleware - protect routes
+function authenticate(req, res, next) {
+  const token = req.headers.authorization?.split(' ')[1]
+  if (!token) return res.status(401).json({ error: 'Token required' })
+
+  try {
+    const decoded = jwt.verify(token, JWT_SECRET)
+    req.userId = decoded.userId
+    next()
+  } catch {
+    res.status(401).json({ error: 'Invalid token' })
+  }
+}
+
+// Protected route example
+app.post('/api/posts', authenticate, async (req, res) => {
+  const post = await prisma.post.create({
+    data: { ...req.body, authorId: req.userId }
+  })
+  res.status(201).json(post)
+})
+```
+
+### Key Concepts
+- Password hashing with bcrypt (never store plain passwords)
+- JWT signing and verification
+- Auth middleware pattern for protecting routes
+- Storing tokens on the client side (Authorization header)
 
 ## Final Assignment: Complete Blog API
 
