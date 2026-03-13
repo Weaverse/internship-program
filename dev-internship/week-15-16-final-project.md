@@ -7,6 +7,11 @@
 
 ---
 
+|                 |                                                                                                          |
+| :-------------- | :------------------------------------------------------------------------------------------------------- |
+| Learning Topics | Capstone project, Weaverse Hydrogen theme, Production deployment, Technical documentation                |
+| Objectives      | Build a complete Weaverse Hydrogen theme, Deploy to production, Present and document the project         |
+
 Build a complete Weaverse Hydrogen theme:
 - [ ] Set up Weaverse + Hydrogen project
 - [ ] Create custom visual components with schemas
@@ -16,8 +21,7 @@ Build a complete Weaverse Hydrogen theme:
 - [ ] Create visual page builder experience
 - [ ] Design responsive theme with TailwindCSS
 - [ ] Implement SEO optimization
-- [ ] Add performance monitoring
-- [ ] Include comprehensive testing
+- [ ] Add performance optimization
 - [ ] Deploy to production
 - [ ] Write technical documentation
 - [ ] Create deployment guide
