@@ -92,7 +92,7 @@ git config --global user.email "your.email@example.com"
 | :--: | :---- | :---------- |
 | 1-2 | [JavaScript & TypeScript](./week-01-02-javascript-typescript.md) | Core JavaScript, ES6+, Functional programming, TypeScript fundamentals |
 | 3-4 | [DOM, CSS & Modern Styling](./week-03-04-dom-css-styling.md) | DOM manipulation, Event handling, Flexbox, Grid, TailwindCSS |
-| 5-6 | [AI Integration & Build Tools](./week-05-06-ai-build-tools.md) | AI prompt engineering, IDE integration, Vite build system |
+| 5-6 | [Build Tools & Development Workflow](./week-05-06-build-tools.md) | Package managers, Vite build system, Linting, Formatting |
 | 7-8 | [Node.js & Backend Development](./week-07-08-nodejs-backend.md) | Express.js, REST APIs, MySQL, Prisma ORM |
 | 9-10 | [React](./week-09-10-react.md) | React components, Hooks, Preact Signals, ShadcnUI |
 | 11-12 | [Advanced Topics & Security](./week-11-12-advanced-security.md) | Zod validation, Authentication, React Router |

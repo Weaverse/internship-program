@@ -21,7 +21,7 @@ internship-program/
     ├── job-description.md   # Developer Intern job description
     ├── week-01-02-javascript-typescript.md
     ├── week-03-04-dom-css-styling.md
-    ├── week-05-06-ai-build-tools.md
+    ├── week-05-06-build-tools.md
     ├── week-07-08-nodejs-backend.md
     ├── week-09-10-react.md
     ├── week-11-12-advanced-security.md

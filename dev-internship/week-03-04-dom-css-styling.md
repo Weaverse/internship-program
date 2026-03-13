@@ -147,4 +147,4 @@ Build [FreshCart Site](https://freshcart-template.codescandy.com/) with interact
 
 ---
 
-[← Back to Overview](./README.md) | [Previous: Week 1-2](./week-01-02-javascript-typescript.md) | [Next: Week 5-6 →](./week-05-06-ai-build-tools.md)
+[← Back to Overview](./README.md) | [Previous: Week 1-2](./week-01-02-javascript-typescript.md) | [Next: Week 5-6 →](./week-05-06-build-tools.md)

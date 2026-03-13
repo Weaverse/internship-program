@@ -84,8 +84,6 @@ Build a Full-Featured Online Store with React Router:
   - Newsletter signup
 - [ ] Deploy to production
 
-*Use the AI assistant you set up in Week 5-6 to help with complex implementations.*
-
 ---
 
 [← Back to Overview](./README.md) | [Previous: Week 9-10](./week-09-10-react.md) | [Next: Week 13 →](./week-13-shopify.md)
