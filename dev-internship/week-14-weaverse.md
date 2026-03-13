@@ -19,11 +19,14 @@
    npm create @weaverse/hydrogen@latest
    ```
 
-## Component Development
-- Create custom sections
-- Define component schemas
-- Implement visual editing
-- Test in Weaverse Studio
+## Assignment
+
+Build custom Weaverse components for a Hydrogen storefront:
+- [ ] Create custom sections (Hero banner, Featured products, Testimonials)
+- [ ] Define component schemas with input settings (text, image, color, select)
+- [ ] Implement visual editing capabilities
+- [ ] Test components in Weaverse Studio
+- [ ] Deploy to production
 
 ---
 
