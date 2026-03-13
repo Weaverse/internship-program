@@ -9,8 +9,8 @@
 
 |                 |                                                                                                            |
 | :-------------- | :--------------------------------------------------------------------------------------------------------- |
-| Learning Topics | Package managers, Vite build system, Development workflow, Linting, Formatting, Environment configuration  |
-| Objectives      | Master modern build tools, Set up a professional development workflow, Build BudgetY app with TypeScript    |
+| Learning Topics | Package managers, Vite build system, Git workflows, Linting, Formatting, Environment configuration       |
+| Objectives      | Master modern build tools, Learn collaborative Git workflows, Set up a professional dev environment, Build BudgetY app with TypeScript |
 
 ## Package Managers (Days 1-2)
 
@@ -54,6 +54,31 @@
    - `target` and `module` options
    - Path aliases with `baseUrl` and `paths`
 2. Common TypeScript compiler options for frontend projects
+
+## Git Workflows (Days 8-10)
+
+> [!NOTE]
+> If you're already comfortable with Git branching and pull requests, feel free to skip this section.
+
+1. Read [Git Handbook](https://guides.github.com/introduction/git-handbook/)
+2. Learn branching and merging:
+   - Creating and switching branches (`git branch`, `git checkout`, `git switch`)
+   - Merging branches and resolving conflicts
+   - Rebasing vs merging (overview)
+3. Learn collaborative workflows:
+   - Forking and cloning repositories
+   - Creating pull requests on GitHub
+   - Code review process
+   - Keeping your branch up to date (`git pull`, `git fetch`)
+4. Practice:
+   - Create a feature branch for your BudgetY app
+   - Make changes, commit, and push to GitHub
+   - Open a pull request and merge it
+5. Learn useful Git commands:
+   - `git stash` — temporarily save uncommitted changes
+   - `git log --oneline` — view commit history
+   - `git diff` — review changes before committing
+   - `git reset` — undo commits (soft vs hard)
 
 ### Git Hooks (Optional)
 - Pre-commit hooks with [Husky](https://typicode.github.io/husky/) + [lint-staged](https://github.com/lint-staged/lint-staged)
