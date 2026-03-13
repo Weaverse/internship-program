@@ -44,7 +44,7 @@ By completing this program, interns will:
 | **Languages**   | JavaScript, TypeScript      | Core programming           |
 | **Frontend**    | React, TailwindCSS          | User interface development |
 | **Backend**     | Node.js, Express.js         | Server-side development    |
-| **Database**    | PostgreSQL, Prisma ORM      | Data persistence           |
+| **Database**    | MySQL, Prisma ORM           | Data persistence           |
 | **Build Tools** | Vite, npm, pnpm             | Development workflow       |
 | **E-commerce**  | Shopify, Hydrogen, Weaverse | Headless commerce          |
 
@@ -70,7 +70,7 @@ Before starting the official program, we recommend completing:
    - Install [Chrome](https://www.google.com/chrome/) or [Brave Browser](https://brave.com/)
    - Install [Git](https://git-scm.com/) and create [GitHub](https://github.com) account
    - Install [Node.js](https://nodejs.org/) (LTS version)
-   - Choose an IDE: [VS Code](https://code.visualstudio.com/), [Cursor](https://cursor.sh/), [Google Antigravity](https://antigravity.google/), or [WebStorm](https://www.jetbrains.com/webstorm/)
+   - Choose an IDE: [VS Code](https://code.visualstudio.com/) (recommended), [Cursor](https://cursor.sh/), or [WebStorm](https://www.jetbrains.com/webstorm/)
 
 **Setup Checklist:**
 ```bash
@@ -92,10 +92,10 @@ git config --global user.email "your.email@example.com"
 | :--: | :---- | :---------- |
 | 1-2 | [JavaScript & TypeScript](./week-01-02-javascript-typescript.md) | Core JavaScript, ES6+, Functional programming, TypeScript fundamentals |
 | 3-4 | [DOM, CSS & Modern Styling](./week-03-04-dom-css-styling.md) | DOM manipulation, Event handling, Flexbox, Grid, TailwindCSS |
-| 5-6 | [Build Tools & Development Workflow](./week-05-06-build-tools.md) | Package managers, Vite build system, Linting, Formatting |
+| 5-6 | [Build Tools & Development Workflow](./week-05-06-build-tools.md) | Package managers, Vite build system, Git workflows, Linting, Formatting |
 | 7-8 | [Node.js & Backend Development](./week-07-08-nodejs-backend.md) | Express.js, REST APIs, MySQL, Prisma ORM |
-| 9-10 | [React](./week-09-10-react.md) | React components, Hooks, Preact Signals, ShadcnUI |
-| 11-12 | [Advanced Topics & Security](./week-11-12-advanced-security.md) | Zod validation, Authentication, React Router |
+| 9-10 | [React & GraphQL](./week-09-10-react.md) | React components, Hooks, Data fetching, Preact Signals, ShadcnUI, GraphQL |
+| 11-12 | [Advanced React & Validation](./week-11-12-advanced-react.md) | Zod validation, React Router, Advanced patterns |
 | 13 | [Shopify Development](./week-13-shopify.md) | Shopify ecosystem, Partner account, Hydrogen framework |
 | 14 | [Weaverse Integration](./week-14-weaverse.md) | Weaverse SDK, Visual components, Component schemas |
 | 15-16 | [Final Project & Review](./week-15-16-final-project.md) | Capstone project, Presentation, Graduation |

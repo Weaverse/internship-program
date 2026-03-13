@@ -1,4 +1,4 @@
-# Week 11-12: Advanced Topics & Security
+# Week 11-12: Advanced React & Validation
 
 > [!IMPORTANT]
 > **DO NOT** use AI tools to write code for you. You come here to **LEARN**, the goal of this program is to build
@@ -9,8 +9,8 @@
 
 |                 |                                                                                                          |
 | :-------------- | :------------------------------------------------------------------------------------------------------- |
-| Learning Topics | Schema validation with Zod, Authentication & Authorization, Security best practices, React Router        |
-| Objectives      | Implement secure authentication system, Add comprehensive validation, Build advanced e-commerce features |
+| Learning Topics | Schema validation with Zod, React Router, Advanced React patterns                                       |
+| Objectives      | Add comprehensive validation, Master routing patterns, Build advanced e-commerce features                |
 
 ## Zod Schema Validation
 1. Read [Zod Documentation](https://zod.dev)
