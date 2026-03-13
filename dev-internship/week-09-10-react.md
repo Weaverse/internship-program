@@ -1,4 +1,4 @@
-# Week 9-10: React & GraphQL
+# Week 9-10: React
 
 > [!IMPORTANT]
 > **DO NOT** use AI tools to write code for you. You come here to **LEARN**, the goal of this program is to build
@@ -7,10 +7,10 @@
 
 ---
 
-|                 |                                                                                                                                   |
-| :-------------- | :-------------------------------------------------------------------------------------------------------------------------------- |
-| Learning Topics | React components, Hooks, Data fetching, State management with Preact Signals, ShadcnUI, GraphQL fundamentals                     |
-| Objectives      | Master React fundamentals, Learn data fetching patterns, Build Blog frontend, Learn GraphQL with Pokemon API                      |
+|                 |                                                                                                                        |
+| :-------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| Learning Topics | React components, Hooks, Data fetching, State management with Preact Signals, ShadcnUI components                     |
+| Objectives      | Master React fundamentals, Learn data fetching patterns, Build complete Blog frontend with modern UI                   |
 
 ## React Basics
 
@@ -100,7 +100,7 @@
    - Effects and subscriptions
    - No providers needed!
 
-## Assignment 1: Blog Frontend
+## Assignment
 
 > [!NOTE]
 > Routing is **not required** for this assignment. You can manage all views using state (e.g., show/hide components conditionally). Routing will be covered in Week 11-12. If you already know React Router, feel free to use it as a nice-to-have.
@@ -130,54 +130,6 @@ Complete Blog Platform with Modern Stack:
 - [ ] Include form validation with react-hook-form
 - [ ] Deploy to production
 
-## GraphQL Fundamentals
-
-1. Learn what GraphQL is and how it differs from REST:
-   - REST: multiple endpoints, fixed data shape
-   - GraphQL: single endpoint, client decides what data to fetch
-2. Read [GraphQL Introduction](https://graphql.org/learn/)
-3. Key concepts:
-   - Queries (reading data)
-   - Variables and arguments
-   - Fragments (reusable field sets)
-   - Using a GraphQL playground/explorer
-4. Practice with [PokeAPI GraphQL](https://pokeapi.co/docs/graphql):
-   ```graphql
-   # Example: Fetch a Pokemon with specific fields
-   query GetPokemon($name: String!) {
-     pokemon_v2_pokemon(where: { name: { _eq: $name } }) {
-       name
-       height
-       weight
-       pokemon_v2_pokemontypes {
-         pokemon_v2_type {
-           name
-         }
-       }
-       pokemon_v2_pokemonstats {
-         base_stat
-         pokemon_v2_stat {
-           name
-         }
-       }
-     }
-   }
-   ```
-
-## Assignment 2: Pokemon Explorer (GraphQL)
-
-> [!NOTE]
-> This assignment focuses on learning GraphQL data fetching. UI/styling is **not the priority** — keep it simple and functional.
-
-Build a Pokemon Explorer app using the [PokeAPI GraphQL endpoint](https://beta.pokeapi.co/graphql/v1beta):
-- [ ] Set up a React + TypeScript project
-- [ ] Fetch and display a list of Pokemon using a GraphQL query
-- [ ] Implement Pokemon detail view (stats, types, abilities)
-- [ ] Add search/filter by name or type using GraphQL variables
-- [ ] Implement pagination or infinite scroll using GraphQL `limit` and `offset`
-- [ ] Handle loading and error states
-- [ ] Deploy to production
-
 ---
 
-[← Back to Overview](./README.md) | [Previous: Week 7-8](./week-07-08-nodejs-backend.md) | [Next: Week 11-12 →](./week-11-12-advanced-react.md)
+[← Back to Overview](./README.md) | [Previous: Week 7-8](./week-07-08-nodejs-backend.md) | [Next: Week 11-12 →](./week-11-12-react-router.md)
