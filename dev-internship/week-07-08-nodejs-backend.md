@@ -20,14 +20,64 @@
 - File system operations
 - Environment variables
 
-### Express.js
-1. Read [Express Getting Started](https://expressjs.com/en/starter/installing.html)
-2. Build a simple API:
+### Project Setup
+
+1. **Initialize the project**
+   ```bash
+   mkdir blog-api
+   cd blog-api
+   npm init -y
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install express
+   npm install -D typescript tsx @types/node @types/express
+   ```
+
+3. **Configure `package.json`**
+
+   Add `"type": "module"` and dev scripts:
+   ```json
+   {
+     "name": "blog-api",
+     "type": "module",
+     "scripts": {
+       "dev": "tsx watch src/index.ts",
+       "start": "tsx src/index.ts"
+     }
+   }
+   ```
+
+   - `"type": "module"` enables ES modules (`import`/`export` syntax) instead of CommonJS (`require`)
+   - [`tsx`](https://tsx.is/) runs TypeScript directly without a separate compile step
+   - `tsx watch` automatically restarts the server when you save file changes
+
+4. **Configure TypeScript**
+
+   Create `tsconfig.json`:
+   ```json
+   {
+     "compilerOptions": {
+       "target": "ESNext",
+       "module": "NodeNext",
+       "moduleResolution": "NodeNext",
+       "strict": true,
+       "esModuleInterop": true,
+       "outDir": "dist"
+     },
+     "include": ["src"]
+   }
+   ```
+
+5. **Create entry file**
+
+   Create `src/index.ts` and start your server:
    ```typescript
-   // Basic Express setup
    import express from 'express'
 
    const app = express()
+   const PORT = 3000
 
    app.use(express.json())
 
@@ -35,8 +85,40 @@
      res.json({ status: 'OK' })
    })
 
-   app.listen(3000)
+   app.listen(PORT, () => {
+     console.log(`Server running on http://localhost:${PORT}`)
+   })
    ```
+
+6. **Run the dev server**
+   ```bash
+   npm run dev
+   ```
+   Now any changes you save in `src/` will automatically restart the server.
+
+### Express.js
+1. Read [Express Getting Started](https://expressjs.com/en/starter/installing.html)
+2. Learn Express core concepts:
+   - Routing (`app.get`, `app.post`, `app.put`, `app.delete`)
+   - Middleware (`app.use`)
+   - Request object (`req.body`, `req.params`, `req.query`)
+   - Response object (`res.json`, `res.status`)
+
+### Test Your APIs
+
+1. **Test in the browser**
+   - Open `http://localhost:3000/api/health` in your browser
+   - The browser can only test `GET` requests — for `POST`, `PUT`, `DELETE` you need an API client
+
+2. **Install [Bruno](https://www.usebruno.com/)**
+   - Bruno is a fast, open-source API client (alternative to Postman)
+   - Download and install from [usebruno.com](https://www.usebruno.com/downloads)
+
+3. **Test APIs in Bruno**
+   - Create a new collection for your project
+   - Add requests for each endpoint (GET, POST, PUT, DELETE)
+   - Test the health endpoint and verify the response
+   - Save your collection so you can reuse it as you build more endpoints
 
 ## Part 2: Database with MySQL
 
@@ -137,17 +219,12 @@
 
 ### Assignment: Database Integration
 
-1. **Install API Client**
-   - Install [Postman](https://www.postman.com/downloads/) or any preferred API client
-   - Alternative options: Insomnia, Thunder Client (VS Code extension), HTTPie
-
-2. **Test All APIs**
-   - Create a Postman collection for your API
-   - Test all CRUD operations using the API client
+1. **Test All APIs**
+   - Test all CRUD operations using Bruno
    - Save example requests for each endpoint
    - Test edge cases and error handling
 
-3. **Update to [RESTful Standards](https://restfulapi.net/)**
+2. **Update to [RESTful Standards](https://restfulapi.net/)**
    - [ ] Follow RESTful naming conventions:
      - GET /api/users (list all users)
      - GET /api/users/:id (get single user)
@@ -172,83 +249,87 @@
    - Benefits: Type safety, auto-completion, migrations, database agnostic code
    - Prisma is a modern ORM that provides excellent TypeScript support
 
-### Learn Prisma
+### Add Prisma to Your Project
 
-1. **Install and Initialize Prisma**
+Follow the official guide: [Add Prisma to an existing project (MySQL)](https://www.prisma.io/docs/prisma-orm/add-to-existing-project/mysql)
+
+1. **Install Prisma CLI**
    ```bash
-   npm install prisma @prisma/client
-   npx prisma init
+   npm install prisma -D
    ```
 
-2. **Configure Prisma with MySQL**
-   Update your `.env` file:
+2. **Initialize Prisma with MySQL**
+   ```bash
+   npx prisma init --datasource-provider mysql
+   ```
+   This creates:
+   - `prisma/schema.prisma` — your database schema file
+   - `.env` — with a `DATABASE_URL` placeholder
+
+3. **Configure the database connection**
+
+   Update the `DATABASE_URL` in your `.env` file to point to your local MySQL database:
    ```env
    DATABASE_URL="mysql://root:password@localhost:3306/blog_db"
    ```
 
-3. **Define Prisma Schema**
-   ```prisma
-   // prisma/schema.prisma
-   generator client {
-     provider = "prisma-client-js"
-   }
+4. **Introspect your existing database**
 
-   datasource db {
-     provider = "mysql"
-     url      = env("DATABASE_URL")
-   }
-
-   model User {
-     id        String   @id @default(cuid())
-     email     String   @unique
-     name      String
-     password  String
-     posts     Post[]
-     comments  Comment[]
-     createdAt DateTime @default(now())
-   }
+   Since you already have tables from Part 2, pull the existing schema into Prisma:
+   ```bash
+   npx prisma db pull
    ```
+   This reads your database and generates the corresponding models in `prisma/schema.prisma`.
 
-4. **Update Database Calls to Use Prisma**
+   Open `prisma/schema.prisma` and review the generated models — they should match your existing tables.
+
+5. **Install and generate Prisma Client**
+   ```bash
+   npm install @prisma/client
+   npx prisma generate
+   ```
+   - `@prisma/client` is the library you use in your code
+   - `prisma generate` creates a type-safe client based on your schema
+
+6. **Update your Express routes to use Prisma**
    ```typescript
-   import { PrismaClient } from '@prisma/client';
-   const prisma = new PrismaClient();
+   import { PrismaClient } from '@prisma/client'
+
+   const prisma = new PrismaClient()
 
    // CREATE
    app.post('/api/users', async (req, res) => {
-     try {
-       const user = await prisma.user.create({
-         data: req.body
-       });
-       res.status(201).json(user);
-     } catch (error) {
-       res.status(400).json({ error: error.message });
-     }
-   });
+     const user = await prisma.user.create({
+       data: req.body
+     })
+     res.status(201).json(user)
+   })
 
    // READ with pagination
    app.get('/api/users', async (req, res) => {
      // ...
-   });
+   })
 
    // UPDATE
    app.put('/api/users/:id', async (req, res) => {
      // ...
-   });
+   })
 
    // DELETE
    app.delete('/api/users/:id', async (req, res) => {
      // ...
-   });
+   })
    ```
 
-5. **Deploy to Cloud Database**
+   Compare this with the raw MySQL version from Part 2 — notice how much cleaner and type-safe Prisma queries are.
+
+7. **Deploy to Cloud Database**
    - Register for a free database hosting service:
      - [Supabase](https://supabase.com/) - Generous free tier with PostgreSQL
      - [PlanetScale](https://planetscale.com/) - MySQL-compatible serverless database
      - [Railway](https://railway.app/) - Simple deployment with MySQL/PostgreSQL
      - [Aiven](https://aiven.io/) - Managed cloud databases
-   - Update your DATABASE_URL to use the cloud database instead of local
+   - Update your `DATABASE_URL` to use the cloud database instead of local
 
 ## Part 4: Authentication with JWT
 
