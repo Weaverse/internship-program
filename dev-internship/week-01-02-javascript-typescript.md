@@ -10,7 +10,7 @@
 |                 |                                                                                                             |
 | :-------------- | :---------------------------------------------------------------------------------------------------------- |
 | Learning Topics | Core JavaScript, ES6+ features, Functional programming, TypeScript fundamentals, Type-safe development      |
-| Objectives      | Complete 30 JS exercises, Master TypeScript basics, Build a type-safe CLI task manager with full TypeScript |
+| Objectives      | Complete 20 JS exercises, Master TypeScript basics, Build a type-safe CLI task manager with full TypeScript |
 
 ## Beginner JavaScript (Skip if already familiar)
 1. Complete [JavaScript Beginner Tutorial](https://www.w3schools.com/js/default.asp)
@@ -19,8 +19,7 @@
 1. Register an account on [Exercism](https://exercism.org)
 2. Complete the [Javascript Track](https://exercism.org/tracks/javascript) exercises:
    - **15 Easy exercises** - Start with basics and build confidence
-   - **10 Medium exercises** - Apply concepts in more complex scenarios
-   - **5 Hard exercises** - Challenge yourself with advanced problems
+   - **5 Medium exercises** - Apply concepts in more complex scenarios
 3. Focus on understanding:
    - Variables and data types
    - Functions and scope
