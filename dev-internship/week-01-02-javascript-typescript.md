@@ -37,7 +37,7 @@
    - Promises and Async/Await
 
 ## TypeScript Fundamentals (Days 6-10)
-1. Read [TypeScript Handbook - The Basics](https://www.typescriptlang.org/docs/handbook/2/basics.html)
+1. Read [TypeScript Handbook - The Basics](https://www.typescriptlang.org/docs/handbook/intro.html) 
 2. Set up TypeScript environment:
    ```bash
    npm install -g typescript ts-node @types/node
